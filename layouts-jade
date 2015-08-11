@@ -1,0 +1,3 @@
+#!/bin/bash
+#Renders layout .jade files to html in /_layouts
+jade --out ./site/_layouts/ ./site/assets/jade/{master,post}.jade

@@ -1,0 +1,33 @@
+@import "global-variables";
+body {
+	color: white;
+}
+#landing {
+	background: url('../img/landing-mobile.jpg') no-repeat center center;
+	background-size: cover;
+	height: calc(100vh - 72px);
+	width: 100vw;
+	margin-left: 0;
+	padding-left: 0;
+}
+body {
+	@include vertical-rhythm(12px);
+}
+img {
+	display: block;
+}
+	
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.callout {
+	background-color: rgba(10,10,190,0.25);
+	margin-left: 0;
+	bottom: 72px;
+	margin-top: 360px;
+}
+

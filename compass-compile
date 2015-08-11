@@ -1,0 +1,9 @@
+#!/bin/bash
+red="\033[0;31m"
+nc="\033[0m" # No Color
+
+compass compile ./site/assets \
+&& rm ./site/_includes/main.css \
+&& echo -e "    $red rm $nc main.css" \
+&& cp ./site/assets/style/main.css ./site/_includes/main.css \
+&& echo -e "    $red cp $nc main.css" \

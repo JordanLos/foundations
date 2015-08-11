@@ -1,0 +1,4 @@
+#!/bin/bash
+#move render jade files in /assets to /_includes
+
+jade -o ./site/_includes/ ./site/assets/jade/{footer,header,head}.jade
