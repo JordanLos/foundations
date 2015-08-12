@@ -20,3 +20,12 @@ $mgc-nmb: 2.4rem; //magic-number: 24px
 	-o-background-size: 100% $line-height;
 	background-size: 100% $line-height;
 }
+
+//Vertical Align Placeholder
+%vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}

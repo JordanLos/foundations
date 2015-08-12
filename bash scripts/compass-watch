@@ -2,6 +2,6 @@
 
 compass watch ./site/assets \
 && rm ./site/_includes/main.css \
-&& echo -e "    $red rm $nc main.css" \
+&& echo -e "    $red rm $nc site/_includes/main.css" \
 && cp ./site/assets/style/main.css ./site/_includes/main.css \
-&& echo -e "    $red cp $nc main.css" \
+&& echo -e "    $red cp $nc site/_includes/main.css" \

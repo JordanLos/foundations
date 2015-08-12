@@ -1,5 +1,0 @@
-#!/bin/bash
-wipe="\033[0m"
-yellow="\033[0;31m"
-black="40m"
-echo -e "Output a $yellow coloured $wipe word."

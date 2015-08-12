@@ -1,3 +1,0 @@
-#!/bin/bash
-
-jade ./site/assets/jade/index.jade -o ./site

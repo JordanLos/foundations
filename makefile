@@ -1,10 +1,6 @@
 SHELL := /bin/bash 
 all:
 	@cat makefile
-
-serve_local:
-	cd ./site && jekyll serve
-
 build:
 	. index-jade
 	. layouts-jade
@@ -14,12 +10,21 @@ build:
 	cp ./site/assets/style/main.css ./site/_includes/main.css
 	jekyll build -s ./site -d ./site/_build
 
+jekyll-watch:
+	jekyll build -s ./site -d ./site/_build --watch
 
-jekyll-build:
-	jekyll build -s ./site -d ./site/_build
+browser-sync-all:
+	browser-sync start --server site/_build --files "site/_build/*.html, site/_build/assets/styles/*.css, site/_build/assets/js/*.js"
 
-serve_local:
-	cd ./site && jekyll serve
+index-jade-watch:
+	jade ./site/assets/jade/index.jade -o ./site -w
+
+compass-watch:
+	compass watch ./site/assets \
+	&& rm ./site/_includes/main.css \
+	&& echo -e "    $red rm $nc site/_includes/main.css" \
+	&& cp ./site/assets/style/main.css ./site/_includes/main.css \
+	&& echo -e "    $red cp $nc site/_includes/main.css" \
 
 inline_critical:
 	sass ./site/assets/sass/main.scss ./site/assets/style/main.css

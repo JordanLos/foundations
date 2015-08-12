@@ -11,36 +11,41 @@ include mixins.jade
             p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id.
             a(href='#about' class='button')
 .container 
-    div(class='one-half column offset-by-one')
-        h3 My Philosophy
-        p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu. Ut pri probo vitae, eos ea quas discere posidonium, id his deleniti probatus delicata.
-        p Cu principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. 
+    .media
+        img(src='assets/img/provider.jpg' class='five columns')
+        div(class='one-half column offset-by-one')
+            h3 My Philosophy
+            p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu. 
     //- Foundations Advantage
     +level2('Why Foundations Dayhome?', '')
-    div
-        img(src='placeholder.jpg')
-        h3 Competency
-        p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est.
-    div
-        img(src='placeholder.jpg')
-        h3 Experience
-        p Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi.
-    div
-        img(src='placeholder.jpg')
-        h3 Trust
-        p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
-    div
-        h3 Government Approved Dayhome
-        p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
-        a(href='#')
+    .media
+        img(src='assets/img/graduation30.svg' class='two columns')
+        .ten.columns
+            h3 Competency
+            p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est.
+    .media
+        img(src='assets/img/kindergarden.svg' class='two columns')
+        .ten.columns
+            h3 Experience
+            p Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi.
+    .media
+        img(src='assets/img/agreement2.svg' class='two columns')
+        .ten.columns
+            h3 Trust
+            p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
+.full-width
+    .container.parallax
+        .mod.ten.columns
+            h3 Government Approved Dayhome
+            p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
+            a(href='#' class='button') Learn
+.container
     //- Growth & Development
     +level2('Growth and Development', 'Stet deserunt eu nam, sed ex decore putant explicari, usu ea modus vocibus signiferumque. Sed ne impetus perfecto. Ea enim complectitur qui. In mea eripuit legendos, splendide honestatis ut pri. Lorem suavitate in has.')
-    div
-        h2 Art
-        img(src='placeholder.jpg')
-        div
-            img(src='placeholder.jpg')
-            p "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+    .activity  
+        .media
+            img(src='assets/img/art.png' class='two columns')
+            p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     div
         h2 Art2
         img(src='placeholder.jpg')
