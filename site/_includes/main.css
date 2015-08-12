@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /*\______VERTICAL RHYTHM________\*/
+/* line 25, ../sass/_global-variables.scss */
+.mod {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -691,7 +700,7 @@ there.
 /* Larger than Desktop HD */
 /* line 2, ../sass/_l-mobile.scss */
 body {
-  color: white;
+  color: black;
 }
 
 /* line 5, ../sass/_l-mobile.scss */
@@ -745,6 +754,42 @@ html {
   margin-left: 0;
   bottom: 72px;
   margin-top: 360px;
+}
+
+/* line 33, ../sass/_l-mobile.scss */
+.container.full-width {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 38, ../sass/_l-mobile.scss */
+.parallax {
+  height: 396px;
+}
+
+/* line 41, ../sass/_l-mobile.scss */
+#govt {
+  background: url("../img/govt.jpg") no-repeat center center fixed;
+  background-size: auto 600px;
+}
+
+/* line 48, ../sass/_l-mobile.scss */
+.activity {
+  background: url("../img/art.jpg") no-repeat;
+  background-size: auto 100vw;
+  left: 0;
+  right: 0;
+  height: 276px;
+  background-color: blue;
+  width: 100vw;
+  margin-left: -10%;
+}
+
+/* line 58, ../sass/_l-mobile.scss */
+.media {
+  height: 72px;
+  bottom: 0;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */

@@ -1,6 +1,7 @@
 @import "global-variables";
 body {
 	color: black;
+	background-color: #ddd;
 }
 #landing {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
@@ -13,9 +14,7 @@ body {
 body {
 	@include vertical-rhythm(12px);
 }
-img {
-	display: block;
-}
+
 	
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -26,38 +25,20 @@ html {
 }
 .callout {
 	background-color: rgba(10,10,190,0.25);
-	margin-left: 0;
 	bottom: 72px;
 	margin-top: 360px;
 }	
-.container.full-width {
-	margin: 0;
-	padding: 0;
+
+.parallax {
+	height: 420px;
+	background: url('../img/govt.jpg') no-repeat center center fixed;
+	background-size: auto 100%;
 	width: 100%;
 }
-.parallax {
-	height: 396px;
-}
-.full-width {
-	background: url('../img/govt.jpg') no-repeat center center fixed;
-	background-size: auto 600px;
-}
-.mod {
+
+.parallax > div {
 	@extend %vertical-align;
 }
-.activity {
-	background: url('../img/art.jpg') no-repeat;
-	background-size: auto 276px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	height: 276px;
-}
-
-
-
-
-
 
 
 

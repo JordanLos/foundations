@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*\______VERTICAL RHYTHM________\*/
 /* line 25, ../sass/_global-variables.scss */
-.mod {
+.parallax > div {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -701,9 +701,10 @@ there.
 /* line 2, ../sass/_l-mobile.scss */
 body {
   color: black;
+  background-color: #ddd;
 }
 
-/* line 5, ../sass/_l-mobile.scss */
+/* line 6, ../sass/_l-mobile.scss */
 #landing {
   background: url("../img/landing-mobile.jpg") no-repeat center center;
   background-size: cover;
@@ -713,7 +714,7 @@ body {
   padding-left: 0;
 }
 
-/* line 13, ../sass/_l-mobile.scss */
+/* line 14, ../sass/_l-mobile.scss */
 body {
   background-image: -moz-linear-gradient(top, transparent 95%, rgba(0, 0, 0, 0.3) 100%);
   /* FF3.6+ */
@@ -732,56 +733,30 @@ body {
   background-size: 100% 12px;
 }
 
-/* line 16, ../sass/_l-mobile.scss */
-img {
-  display: block;
-}
-
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 21, ../sass/_l-mobile.scss */
+/* line 20, ../sass/_l-mobile.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 24, ../sass/_l-mobile.scss */
+/* line 23, ../sass/_l-mobile.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 27, ../sass/_l-mobile.scss */
+/* line 26, ../sass/_l-mobile.scss */
 .callout {
   background-color: rgba(10, 10, 190, 0.25);
-  margin-left: 0;
   bottom: 72px;
   margin-top: 360px;
 }
 
-/* line 33, ../sass/_l-mobile.scss */
-.container.full-width {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/* line 38, ../sass/_l-mobile.scss */
+/* line 32, ../sass/_l-mobile.scss */
 .parallax {
-  height: 396px;
-}
-
-/* line 41, ../sass/_l-mobile.scss */
-.full-width {
+  height: 420px;
   background: url("../img/govt.jpg") no-repeat center center fixed;
-  background-size: auto 600px;
-}
-
-/* line 48, ../sass/_l-mobile.scss */
-.activity {
-  background: url("../img/art.jpg") no-repeat;
-  background-size: auto 276px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 276px;
+  background-size: auto 100%;
+  width: 100%;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
