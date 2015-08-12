@@ -39,6 +39,19 @@ html {
 .parallax > div {
 	@extend %vertical-align;
 }
+.media {
+	display: flex;
+	align-items: center;
+}
+.activity > .media {
+	margin-left: -10%;
+	width: 100vw;
+	background-color: rgba(10,10,150,0.25);
+}
+#activity1 {
+	background: url('../img/art.jpg') no-repeat center center;
+	background-size: auto 480px;
+}
 
 
 

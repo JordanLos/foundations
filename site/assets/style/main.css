@@ -759,6 +759,25 @@ html {
   width: 100%;
 }
 
+/* line 42, ../sass/_l-mobile.scss */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+/* line 46, ../sass/_l-mobile.scss */
+.activity > .media {
+  margin-left: -10%;
+  width: 100vw;
+  background-color: rgba(10, 10, 150, 0.25);
+}
+
+/* line 51, ../sass/_l-mobile.scss */
+#activity1 {
+  background: url("../img/art.jpg") no-repeat center center;
+  background-size: auto 480px;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
