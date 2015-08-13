@@ -832,6 +832,16 @@ html {
   text-align: center;
 }
 
+/* line 94, ../sass/_l-mobile.scss */
+.post > h3 {
+  height: 48px;
+}
+
+/* line 98, ../sass/_l-mobile.scss */
+.cal {
+  text-align: center;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.

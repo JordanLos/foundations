@@ -89,10 +89,15 @@ html {
 }
 .card > h2 {
 }
-
-
-
-
+.focus {}
+.post {
+	> h3 {
+		height: 48px;
+	}
+}
+.cal {
+	text-align: center;
+}
 
 
 

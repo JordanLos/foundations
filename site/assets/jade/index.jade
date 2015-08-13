@@ -97,37 +97,43 @@ include mixins.jade
             hr
             h4 Afternoon Snack
             p I don't think you'll be that hungry. . .
-        
-
 .container        
-    .card
-        h2 Part-time
-        h3 Part-Time
-        h2 $10.40/hr
-        h2 $65.00/day
-        h4 Drop-in Spots Available
-        h4 Snacks and Lunch Provided
-        h4 Flexible Hours
-    .card		
+    .card.mod.text
+        h3 Part-time
+        em $10.40/hr
+        em $65.00/day
+        p Drop-in Spots Available
+        hr
+        p Snacks and Lunch Provided
+        hr
+        p Flexible Hours
+    .card.mod.text
         h3 Before/After School
-        h2 $10.40/hr
-        h4 Drop-in Spots Available
-        h4 CLose to Bus Routes
-        h4 Lorem Ipsum Something
-    .card
+        em $10.40/hr
+        p Drop-in Spots Available
+        hr
+        p CLose to Bus Routes
+        hr
+        p Lorem Ipsum Something
+    .card.mod.text.focus
         h3 Full-Time
-        h2 $920.00/month
-        h4 Lunch and Snacks Provided
-        h4 Some other Benefit
-        h4 Subsidies Available
-        div
-            a(href='#') Subsidy Info
+        em $920.00/month
+        p Lunch and Snacks Provided
+        hr
+        p Some other Benefit
+        hr
+        p Subsidies Available
+        a(href='#' class='button') Subsidy Info
+
+
+
     +level2('Foundations Blog','Ullum tantas dissentiet pro ad, malis corrumpit his ex. Quo homero adipiscing ad, qui in minim error. Insolens quaerendum referrentur nam ut, at cum assum salutatus, ut congue discere constituam mea. Ludus alienum ancillae ea vim,')
-    //-insert index.html for posts.
+.container
     | {% for posts in site.posts limit: 2 %}
-    img(src='{{ posts.img }}')
-    | {{ posts.date | date: '%d' }}
-    | {{ posts.date | date: '%B' }}
-    h3 {{ posts.title }}
-    | {{ posts.excerpt }}
+    .post
+        img(src='{{ posts.img }}' class='twelve columns')
+        .media.u-full-width
+            p(class='two columns cal')  {{ posts.date | date: '%d %B' }}
+            h3(class='nine columns offset-by-one') {{ posts.title }}
+        | {{ posts.excerpt }}
     | {% endfor %}
