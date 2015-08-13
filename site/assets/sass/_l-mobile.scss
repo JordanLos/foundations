@@ -43,15 +43,20 @@ html {
 	display: flex;
 	align-items: center;
 }
+.container.activity {
+	margin-left: 0;
+	padding-left: 0;
+}
 .activity > .media {
-	margin-left: -10%;
 	width: 100vw;
 	background-color: rgba(10,10,150,0.25);
+	position: absolute;
+	bottom: 0;
 }
-#activity1 {
-	background: url('../img/art.jpg') no-repeat center center;
-	background-size: auto 480px;
+.activity > img {
+	width: 100vw;
 }
+
 
 
 
