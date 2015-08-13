@@ -700,7 +700,7 @@ there.
 /* Larger than Desktop HD */
 /* line 2, ../sass/_l-mobile.scss */
 body {
-  color: black;
+  color: #fff;
   background-color: #ddd;
 }
 
@@ -782,6 +782,54 @@ html {
 /* line 56, ../sass/_l-mobile.scss */
 .activity > img {
   width: 100vw;
+}
+
+/* line 59, ../sass/_l-mobile.scss */
+.bottom > img {
+  height: 48px;
+  width: auto;
+}
+
+/* line 63, ../sass/_l-mobile.scss */
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+/* line 67, ../sass/_l-mobile.scss */
+.img-mod {
+  position: absolute;
+  margin-top: 12px;
+}
+
+/* line 71, ../sass/_l-mobile.scss */
+.mod.img > img {
+  max-width: 100%;
+}
+
+/* line 74, ../sass/_l-mobile.scss */
+#park {
+  display: none;
+}
+
+/* line 77, ../sass/_l-mobile.scss */
+#beach {
+  display: none;
+}
+
+/* line 81, ../sass/_l-mobile.scss */
+.mod {
+  margin: 12px 0;
+}
+
+/* line 84, ../sass/_l-mobile.scss */
+.mod.text {
+  text-align: center;
+}
+
+/* line 87, ../sass/_l-mobile.scss */
+.tab {
+  text-align: center;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */

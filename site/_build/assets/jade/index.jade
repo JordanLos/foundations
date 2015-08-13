@@ -43,63 +43,78 @@ include mixins.jade
 +level2('Growth and Development', 'Stet deserunt eu nam, sed ex decore putant explicari, usu ea modus vocibus signiferumque. Sed ne impetus perfecto. Ea enim complectitur qui. In mea eripuit legendos, splendide honestatis ut pri. Lorem suavitate in has.')
 .container.activity
     img(src='assets/img/art.jpg')
-    .media
+    .media.bottom
         img(src='assets/img/art.png' class='two columns')
         p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     
 .container.activity
     img(src='assets/img/play.jpg')
-    .media
-        img(src='placeholder.jpg')
-        div
-            img(src='placeholder.jpg')
-            p "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+    .media.bottom
+        img(src='assets/img/play.png' class='two columns')
+        p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
 .container.activity
-    .media
-        img(src='placeholder.jpg')
-        div
-            img(src='placeholder.jpg')
-            p "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+    img(src='assets/img/dress-up.jpg')
+    .media.bottom
+        img(src='assets/img/dress-up.png' class='two columns')
+        p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
 .container.activity
-    .media
-        img(src='placeholder.jpg')
-        div
-            img(src='placeholder.jpg')
-            p "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
-   
-
-    h3 Activites We do	
+    img(src='assets/img/learning.jpg')
+    .media.bottom
+        img(src='assets/img/learning.png' class='two columns')
+        p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+.container
+    .tab.three.columns
+        h2 Park
+    .tab.three.columns.offset-by-one
+        h2 Beach
+    .tab.three.columns.offset-by-one
+        h2 Zoo
+    .wrapper.ten.columns.offset-by-one
+        #park.mod.img
+            img(src='assets/img/playground.jpg')
+            p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
+        #beach.mod.img
+            img(src='assets/img/auburn.jpg')
+            p Libris mediocritatem at usu. Ad simul phaedrum nec. Te animal eligendi vim, virtute utroque contentiones mel ex. Eos doctus scripserit ei, hinc dicit ne vel. Scripta assentior eu sea.
+        #zoo.mod.img
+            img(src='assets/img/zoo.jpg')
+            p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
+.container
     h2 What's for Lunch?
-    div
-        h4 Mon
-    div
-        h4 Tue
-    div
-        h4 Wed
-    div
-        h4 Morning Snack
-        p um quis impedit honestatis eu, has enim patrioque evertitur et. ad sed menandri adipiscing persequeris. Qui ut viris veniam, qui ne dicam labore.
-    div
-        h4 Lucnh
-        p Novum habemus vis in. Ignota feugiat eum ei. Ullum nobis deterruisset qui an, 
-    div
-        h4 Afternoon Snack
-        p Sit omnis homero mollis ad, at iusto evertitur vis, eos dicta nostrum consequuntur et.
-    +level2('Pricing','At atqui nulla congue eos, sit ne vero eruditi repudiandae. Has et quot sanctus imperdiet, duo ea viris dolore virtute, veniam neglegentur ut sed. Te has veritus suscipiantur, nec quodsi copiosae eu')
-    div
+    .tab.three.columns
+        h3 Mon
+    .tab.three.columns.offset-by-one
+        h3 Tue
+    .tab.three.columns.offset-by-one
+        h3 Wed
+    #nutrition.wrapper.ten.columns.offset-by-one
+        #mon.mod.text
+            h4 Morning Snack
+            p carrots with baby rabbits
+            hr
+            h4 Lunch
+            p asphalt fried mama rabbit
+            hr
+            h4 Afternoon Snack
+            p I don't think you'll be that hungry. . .
+        
+
+.container        
+    .card
+        h2 Part-time
         h3 Part-Time
         h2 $10.40/hr
         h2 $65.00/day
         h4 Drop-in Spots Available
         h4 Snacks and Lunch Provided
         h4 Flexible Hours
-    div		
+    .card		
         h3 Before/After School
         h2 $10.40/hr
         h4 Drop-in Spots Available
         h4 CLose to Bus Routes
         h4 Lorem Ipsum Something
-    div
+    .card
         h3 Full-Time
         h2 $920.00/month
         h4 Lunch and Snacks Provided

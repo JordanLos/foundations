@@ -1,6 +1,6 @@
 @import "global-variables";
 body {
-	color: black;
+	color: #fff; 
 	background-color: #ddd;
 }
 #landing {
@@ -56,15 +56,39 @@ html {
 .activity > img {
 	width: 100vw;
 }
-
-
-
-
-
-
-
-
-
+.bottom > img {
+	height: 48px;
+	width: auto;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+}
+.img-mod {
+	position: absolute;
+	margin-top: 12px;
+}
+.mod.img > img {
+	max-width: 100%;
+}
+#park {
+	display: none;
+}
+#beach {
+	display: none;
+}
+#zoo {}
+.mod {
+	margin: 12px 0;
+}
+.mod.text {
+	text-align: center;
+}
+.tab {
+	text-align: center;
+}
+.card > h2 {
+}
 
 
 
