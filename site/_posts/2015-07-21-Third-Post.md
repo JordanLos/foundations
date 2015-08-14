@@ -1,6 +1,6 @@
 ---
-title: Third Post
-img: assets/img/placeholder.jpg
+title: This my third post, indicating it is after the 2nd be butfore the 4th
+img: assets/img/post3.jpg
 date: 2015-07-21
 ---
 Ullum tantas dissentiet pro ad, malis corrumpit his ex. Quo homero adipiscing ad, qui in minim error. Insolens quaerendum referrentur nam ut, at cum assum salutatus, ut congue discere constituam mea. Ludus alienum ancillae ea vim, cum ne nisl decore putant. Ne choro ubique eos, an his fabulas elaboraret, et cum percipit assentior.

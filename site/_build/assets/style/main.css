@@ -698,13 +698,19 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* line 2, ../sass/_l-mobile.scss */
-body {
-  color: #fff;
-  background-color: #ddd;
+/*TODO*/
+/* line 3, ../sass/_l-mobile.scss */
+hr {
+  margin: 0;
 }
 
 /* line 6, ../sass/_l-mobile.scss */
+body {
+  color: #fff;
+  background-color: #999;
+}
+
+/* line 10, ../sass/_l-mobile.scss */
 #landing {
   background: url("../img/landing-mobile.jpg") no-repeat center center;
   background-size: cover;
@@ -714,7 +720,7 @@ body {
   padding-left: 0;
 }
 
-/* line 14, ../sass/_l-mobile.scss */
+/* line 18, ../sass/_l-mobile.scss */
 body {
   background-image: -moz-linear-gradient(top, transparent 95%, rgba(0, 0, 0, 0.3) 100%);
   /* FF3.6+ */
@@ -734,24 +740,24 @@ body {
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 20, ../sass/_l-mobile.scss */
+/* line 24, ../sass/_l-mobile.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 23, ../sass/_l-mobile.scss */
+/* line 27, ../sass/_l-mobile.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 26, ../sass/_l-mobile.scss */
+/* line 30, ../sass/_l-mobile.scss */
 .callout {
   background-color: rgba(10, 10, 190, 0.25);
   bottom: 72px;
   margin-top: 360px;
 }
 
-/* line 32, ../sass/_l-mobile.scss */
+/* line 36, ../sass/_l-mobile.scss */
 .parallax {
   height: 420px;
   background: url("../img/govt.jpg") no-repeat center center fixed;
@@ -759,19 +765,19 @@ html {
   width: 100%;
 }
 
-/* line 42, ../sass/_l-mobile.scss */
+/* line 46, ../sass/_l-mobile.scss */
 .media {
   display: flex;
   align-items: center;
 }
 
-/* line 46, ../sass/_l-mobile.scss */
+/* line 50, ../sass/_l-mobile.scss */
 .container.activity {
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 50, ../sass/_l-mobile.scss */
+/* line 54, ../sass/_l-mobile.scss */
 .activity > .media {
   width: 100vw;
   background-color: rgba(10, 10, 150, 0.25);
@@ -779,65 +785,65 @@ html {
   bottom: 0;
 }
 
-/* line 56, ../sass/_l-mobile.scss */
+/* line 60, ../sass/_l-mobile.scss */
 .activity > img {
   width: 100vw;
 }
 
-/* line 59, ../sass/_l-mobile.scss */
+/* line 63, ../sass/_l-mobile.scss */
 .bottom > img {
   height: 48px;
   width: auto;
 }
 
-/* line 63, ../sass/_l-mobile.scss */
+/* line 67, ../sass/_l-mobile.scss */
 .wrapper {
   width: 100%;
   position: relative;
 }
 
-/* line 67, ../sass/_l-mobile.scss */
+/* line 71, ../sass/_l-mobile.scss */
 .img-mod {
   position: absolute;
   margin-top: 12px;
 }
 
-/* line 71, ../sass/_l-mobile.scss */
+/* line 75, ../sass/_l-mobile.scss */
 .mod.img > img {
   max-width: 100%;
 }
 
-/* line 74, ../sass/_l-mobile.scss */
+/* line 78, ../sass/_l-mobile.scss */
 #park {
   display: none;
 }
 
-/* line 77, ../sass/_l-mobile.scss */
+/* line 81, ../sass/_l-mobile.scss */
 #beach {
   display: none;
 }
 
-/* line 81, ../sass/_l-mobile.scss */
+/* line 85, ../sass/_l-mobile.scss */
 .mod {
   margin: 12px 0;
 }
 
-/* line 84, ../sass/_l-mobile.scss */
+/* line 88, ../sass/_l-mobile.scss */
 .mod.text {
   text-align: center;
 }
 
-/* line 87, ../sass/_l-mobile.scss */
+/* line 91, ../sass/_l-mobile.scss */
 .tab {
   text-align: center;
 }
 
-/* line 94, ../sass/_l-mobile.scss */
+/* line 98, ../sass/_l-mobile.scss */
 .post > h3 {
   height: 48px;
 }
 
-/* line 98, ../sass/_l-mobile.scss */
+/* line 102, ../sass/_l-mobile.scss */
 .cal {
   text-align: center;
 }

@@ -1,7 +1,11 @@
 @import "global-variables";
+/*TODO*/
+hr {
+	margin: 0;
+}
 body {
 	color: #fff; 
-	background-color: #ddd;
+	background-color: #999;
 }
 #landing {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;

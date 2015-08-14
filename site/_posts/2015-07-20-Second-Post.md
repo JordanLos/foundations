@@ -1,6 +1,6 @@
 ---
-title: Second Post
-img: /assets/img/placeholder.jpg
+title: My second post, whereby I distinguish a numberal not 1 nor 3, yet between them both
+img: /assets/img/post2.jpg
 date: 2015-07-20
 ---
 At atqui nulla congue eos, sit ne vero eruditi repudiandae. Has et quot sanctus imperdiet, duo ea viris dolore virtute, veniam neglegentur ut sed. Te has veritus suscipiantur, nec quodsi copiosae eu. Eu luptatum probatus mei, his dolorem vivendum et. Duo at tale necessitatibus vituperatoribus.

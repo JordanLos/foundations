@@ -1,6 +1,6 @@
 ---
-title: First Post
-img: /assets/img/placeholder.jpg
+title: Post, the first: a narrative of the events inwhich 0 no longer has pre-eminence
+img: /assets/img/post1.jpg
 date: 2015-07-19
 ---
 Lorem ipsum dolor sit amet, eam purto voluptatum conclusionemque id. Singulis mandamus qui ei, mea ex rebum tollit denique, vis no exerci convenire. Everti accumsan nec at. An debet dictas dolorem duo. No ius labore integre eripuit.
