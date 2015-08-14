@@ -848,6 +848,49 @@ html {
   text-align: center;
 }
 
+/* line 105, ../sass/_l-mobile.scss */
+footer {
+  background-color: #333;
+}
+
+/* line 108, ../sass/_l-mobile.scss */
+.contact {
+  background-color: #780f0f;
+  height: 120px;
+  padding-top: 24px;
+  margin-bottom: 36px;
+}
+
+/* line 114, ../sass/_l-mobile.scss */
+.circle {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background-color: #780f0f;
+}
+/* line 121, ../sass/_l-mobile.scss */
+.circle a {
+  margin: 0 auto;
+}
+/* line 124, ../sass/_l-mobile.scss */
+.circle img {
+  max-height: 48px;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+/* line 134, ../sass/_l-mobile.scss */
+footer p {
+  font-size: 1.2rem;
+  padding-left: 3.5%;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.

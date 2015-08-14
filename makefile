@@ -19,6 +19,9 @@ browser-sync-all:
 index-jade-watch:
 	jade ./site/assets/jade/index.jade -o ./site -w
 
+master-jade-watch:
+	jade ./site/assets/jade/master.jade -o ./site/_layouts -w
+
 compass-watch:
 	compass watch ./site/assets \
 	&& rm ./site/_includes/main.css \
