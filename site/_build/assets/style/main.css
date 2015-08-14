@@ -751,13 +751,17 @@ html {
 }
 
 /* line 30, ../sass/_l-mobile.scss */
-.callout {
-  background-color: rgba(10, 10, 190, 0.25);
-  bottom: 72px;
-  margin-top: 360px;
+.island, .island--primary {
+  position: absolute;
 }
 
-/* line 36, ../sass/_l-mobile.scss */
+/* line 33, ../sass/_l-mobile.scss */
+#landing > .island, #landing > .island--primary {
+  top: 360px;
+  background-color: rgba(10, 10, 190, 0.25);
+}
+
+/* line 37, ../sass/_l-mobile.scss */
 .parallax {
   height: 420px;
   background: url("../img/govt.jpg") no-repeat center center fixed;
@@ -765,95 +769,101 @@ html {
   width: 100%;
 }
 
-/* line 46, ../sass/_l-mobile.scss */
+/* line 47, ../sass/_l-mobile.scss */
 .media {
   display: flex;
   align-items: center;
 }
 
-/* line 50, ../sass/_l-mobile.scss */
-.container.activity {
-  margin-left: 0;
-  padding-left: 0;
+/* line 51, ../sass/_l-mobile.scss */
+.activity > img {
+  position: relative;
+  left: calc(-7.5% - 20px);
 }
 
-/* line 54, ../sass/_l-mobile.scss */
-.activity > .media {
-  width: 100vw;
-  background-color: rgba(10, 10, 150, 0.25);
-  position: absolute;
+/* line 55, ../sass/_l-mobile.scss */
+.activity > .island, .activity > .island--primary {
+  text-align: bottom;
   bottom: 0;
 }
 
-/* line 60, ../sass/_l-mobile.scss */
+/* line 59, ../sass/_l-mobile.scss */
+.island--primary {
+  background-color: rgba(10, 10, 190, 0.25);
+  padding: 0 50px;
+  margin: 0 -50px;
+  vertical-align: bottom;
+}
+
+/* line 67, ../sass/_l-mobile.scss */
 .activity > img {
   width: 100vw;
 }
 
-/* line 63, ../sass/_l-mobile.scss */
+/* line 70, ../sass/_l-mobile.scss */
 .bottom > img {
   height: 48px;
   width: auto;
 }
 
-/* line 67, ../sass/_l-mobile.scss */
+/* line 74, ../sass/_l-mobile.scss */
 .wrapper {
   width: 100%;
   position: relative;
 }
 
-/* line 71, ../sass/_l-mobile.scss */
+/* line 78, ../sass/_l-mobile.scss */
 .img-mod {
   position: absolute;
   margin-top: 12px;
 }
 
-/* line 75, ../sass/_l-mobile.scss */
+/* line 82, ../sass/_l-mobile.scss */
 .mod.img > img {
   max-width: 100%;
 }
 
-/* line 78, ../sass/_l-mobile.scss */
+/* line 85, ../sass/_l-mobile.scss */
 #park {
   display: none;
 }
 
-/* line 81, ../sass/_l-mobile.scss */
+/* line 88, ../sass/_l-mobile.scss */
 #beach {
   display: none;
 }
 
-/* line 85, ../sass/_l-mobile.scss */
+/* line 92, ../sass/_l-mobile.scss */
 .mod {
   margin: 12px 0;
 }
 
-/* line 88, ../sass/_l-mobile.scss */
+/* line 95, ../sass/_l-mobile.scss */
 .mod.text {
   text-align: center;
 }
 
-/* line 91, ../sass/_l-mobile.scss */
+/* line 98, ../sass/_l-mobile.scss */
 .tab {
   text-align: center;
 }
 
-/* line 98, ../sass/_l-mobile.scss */
+/* line 105, ../sass/_l-mobile.scss */
 .post > h3 {
   height: 48px;
 }
 
-/* line 102, ../sass/_l-mobile.scss */
+/* line 109, ../sass/_l-mobile.scss */
 .cal {
   text-align: center;
 }
 
-/* line 105, ../sass/_l-mobile.scss */
+/* line 112, ../sass/_l-mobile.scss */
 footer {
   background-color: #333;
 }
 
-/* line 108, ../sass/_l-mobile.scss */
+/* line 115, ../sass/_l-mobile.scss */
 .contact {
   background-color: #780f0f;
   height: 120px;
@@ -861,7 +871,7 @@ footer {
   margin-bottom: 36px;
 }
 
-/* line 114, ../sass/_l-mobile.scss */
+/* line 121, ../sass/_l-mobile.scss */
 .circle {
   display: flex;
   align-items: center;
@@ -874,18 +884,18 @@ footer {
   border-radius: 50%;
   background-color: #780f0f;
 }
-/* line 121, ../sass/_l-mobile.scss */
+/* line 128, ../sass/_l-mobile.scss */
 .circle a {
   margin: 0 auto;
 }
-/* line 124, ../sass/_l-mobile.scss */
+/* line 131, ../sass/_l-mobile.scss */
 .circle img {
   max-height: 48px;
   max-width: auto;
   margin: 0 auto;
 }
 
-/* line 134, ../sass/_l-mobile.scss */
+/* line 141, ../sass/_l-mobile.scss */
 footer p {
   font-size: 1.2rem;
   padding-left: 3.5%;

@@ -27,12 +27,13 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-.callout {
-	background-color: rgba(10,10,190,0.25);
-	bottom: 72px;
-	margin-top: 360px;
+.island {
+	position: absolute;
 }	
-
+#landing > .island {
+	top: 360px;
+	background-color: rgba(10,10,190,0.25);
+}
 .parallax {
 	height: 420px;
 	background: url('../img/govt.jpg') no-repeat center center fixed;
@@ -47,16 +48,22 @@ html {
 	display: flex;
 	align-items: center;
 }
-.container.activity {
-	margin-left: 0;
-	padding-left: 0;
+.activity > img {
+	position: relative;
+	left: calc(-7.5% - 20px);
 }
-.activity > .media {
-	width: 100vw;
-	background-color: rgba(10,10,150,0.25);
-	position: absolute;
+.activity > .island {
+	text-align: bottom;
 	bottom: 0;
 }
+.island--primary {
+	@extend .island ;
+	background-color: rgba(10,10,190,0.25);
+	padding: 0 50px;
+	margin: 0 -50px;
+	vertical-align: bottom;
+}
+
 .activity > img {
 	width: 100vw;
 }

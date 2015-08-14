@@ -1,5 +1,5 @@
 ---
-title: Post, the first: a narrative of the events inwhich 0 no longer has pre-eminence
+title: Post, the first, a narrative of the events inwhich 0 no longer has pre-eminence
 img: /assets/img/post1.jpg
 date: 2015-07-19
 ---
