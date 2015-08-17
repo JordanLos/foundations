@@ -710,7 +710,81 @@ body {
   background-color: #999;
 }
 
-/* line 10, ../sass/_l-mobile.scss */
+/*=====Objects=====*/
+/* line 11, ../sass/_l-mobile.scss */
+.island, .island--primary {
+  position: absolute;
+}
+
+/* line 14, ../sass/_l-mobile.scss */
+.wrapper, .wrapper--hero {
+  width: 100%;
+  position: relative;
+}
+
+/* line 18, ../sass/_l-mobile.scss */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+/* line 22, ../sass/_l-mobile.scss */
+.card, .card--tabbed {
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 24px;
+  margin-bottom: 24px;
+  height: 360px;
+  color: #444;
+}
+
+/* line 30, ../sass/_l-mobile.scss */
+.card--tabbed {
+  transform: translateY(36px);
+  margin-bottom: 60px;
+  border-radius: 0 5px 5px 5px;
+}
+
+/* line 36, ../sass/_l-mobile.scss */
+.tab {
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  background-color: #888;
+  height: 36px;
+  color: #444;
+}
+
+/* line 43, ../sass/_l-mobile.scss */
+.tab.focus {
+  background-color: #eee;
+}
+
+/* line 46, ../sass/_l-mobile.scss */
+.mod {
+  text-align: center;
+}
+/* line 48, ../sass/_l-mobile.scss */
+.mod > h3 {
+  text-align: center;
+}
+
+/* line 52, ../sass/_l-mobile.scss */
+.wrapper--hero {
+  height: 420px;
+}
+
+/* line 56, ../sass/_l-mobile.scss */
+.hero {
+  height: 420px;
+  background: url("../img/govt.jpg") no-repeat center center fixed;
+  background-size: auto 100%;
+  width: 100vw;
+  position: absolute;
+  left: -50px;
+}
+
+/*=====Layout=====*/
+/* line 67, ../sass/_l-mobile.scss */
 #landing {
   background: url("../img/landing-mobile.jpg") no-repeat center center;
   background-size: cover;
@@ -720,7 +794,7 @@ body {
   padding-left: 0;
 }
 
-/* line 18, ../sass/_l-mobile.scss */
+/* line 75, ../sass/_l-mobile.scss */
 body {
   background-image: -moz-linear-gradient(top, transparent 95%, rgba(0, 0, 0, 0.3) 100%);
   /* FF3.6+ */
@@ -740,120 +814,90 @@ body {
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 24, ../sass/_l-mobile.scss */
+/* line 82, ../sass/_l-mobile.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 27, ../sass/_l-mobile.scss */
+/* line 85, ../sass/_l-mobile.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 30, ../sass/_l-mobile.scss */
-.callout {
+/* line 88, ../sass/_l-mobile.scss */
+#landing .island, #landing .island--primary {
+  top: 360px;
   background-color: rgba(10, 10, 190, 0.25);
-  bottom: 72px;
-  margin-top: 360px;
 }
 
-/* line 36, ../sass/_l-mobile.scss */
+/* line 92, ../sass/_l-mobile.scss */
 .parallax {
-  height: 420px;
-  background: url("../img/govt.jpg") no-repeat center center fixed;
-  background-size: auto 100%;
-  width: 100%;
+  transform: translateY(50%);
 }
 
-/* line 46, ../sass/_l-mobile.scss */
-.media {
-  display: flex;
-  align-items: center;
+/* line 99, ../sass/_l-mobile.scss */
+.activity > img {
+  position: relative;
+  left: calc(-7.5% - 20px);
 }
 
-/* line 50, ../sass/_l-mobile.scss */
-.container.activity {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-/* line 54, ../sass/_l-mobile.scss */
-.activity > .media {
-  width: 100vw;
-  background-color: rgba(10, 10, 150, 0.25);
-  position: absolute;
+/* line 103, ../sass/_l-mobile.scss */
+.activity > .island, .activity > .island--primary {
+  text-align: bottom;
   bottom: 0;
 }
 
-/* line 60, ../sass/_l-mobile.scss */
+/* line 107, ../sass/_l-mobile.scss */
+.island--primary {
+  background-color: rgba(10, 10, 190, 0.25);
+  padding: 0 50px;
+  margin: 0 -50px;
+  vertical-align: bottom;
+}
+
+/* line 115, ../sass/_l-mobile.scss */
 .activity > img {
   width: 100vw;
 }
 
-/* line 63, ../sass/_l-mobile.scss */
+/* line 118, ../sass/_l-mobile.scss */
 .bottom > img {
   height: 48px;
   width: auto;
 }
 
-/* line 67, ../sass/_l-mobile.scss */
-.wrapper {
-  width: 100%;
-  position: relative;
-}
-
-/* line 71, ../sass/_l-mobile.scss */
-.img-mod {
-  position: absolute;
-  margin-top: 12px;
-}
-
-/* line 75, ../sass/_l-mobile.scss */
+/* line 122, ../sass/_l-mobile.scss */
 .mod.img > img {
   max-width: 100%;
 }
 
-/* line 78, ../sass/_l-mobile.scss */
+/* line 125, ../sass/_l-mobile.scss */
 #park {
   display: none;
 }
 
-/* line 81, ../sass/_l-mobile.scss */
+/* line 128, ../sass/_l-mobile.scss */
 #beach {
   display: none;
 }
 
-/* line 85, ../sass/_l-mobile.scss */
-.mod {
-  margin: 12px 0;
-}
-
-/* line 88, ../sass/_l-mobile.scss */
-.mod.text {
-  text-align: center;
-}
-
-/* line 91, ../sass/_l-mobile.scss */
-.tab {
-  text-align: center;
-}
-
-/* line 98, ../sass/_l-mobile.scss */
+/*======POST======*/
+/* line 135, ../sass/_l-mobile.scss */
 .post > h3 {
   height: 48px;
 }
 
-/* line 102, ../sass/_l-mobile.scss */
+/* line 139, ../sass/_l-mobile.scss */
 .cal {
   text-align: center;
 }
 
-/* line 105, ../sass/_l-mobile.scss */
+/* line 146, ../sass/_l-mobile.scss */
 footer {
   background-color: #333;
 }
 
-/* line 108, ../sass/_l-mobile.scss */
+/* line 149, ../sass/_l-mobile.scss */
 .contact {
   background-color: #780f0f;
   height: 120px;
@@ -861,7 +905,7 @@ footer {
   margin-bottom: 36px;
 }
 
-/* line 114, ../sass/_l-mobile.scss */
+/* line 155, ../sass/_l-mobile.scss */
 .circle {
   display: flex;
   align-items: center;
@@ -874,18 +918,18 @@ footer {
   border-radius: 50%;
   background-color: #780f0f;
 }
-/* line 121, ../sass/_l-mobile.scss */
+/* line 162, ../sass/_l-mobile.scss */
 .circle a {
   margin: 0 auto;
 }
-/* line 124, ../sass/_l-mobile.scss */
+/* line 165, ../sass/_l-mobile.scss */
 .circle img {
   max-height: 48px;
   max-width: auto;
   margin: 0 auto;
 }
 
-/* line 134, ../sass/_l-mobile.scss */
+/* line 175, ../sass/_l-mobile.scss */
 footer p {
   font-size: 1.2rem;
   padding-left: 3.5%;

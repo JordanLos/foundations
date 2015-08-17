@@ -7,74 +7,75 @@ include mixins.jade
 
 #landing.container
     //- landing panel
-    .nine.columns.island
-        .eleven.columns.offset-by-one
-            h1 Childcare Begins with Trust
-            p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id.
-            a(href='#about' class='button')
+    .row
+        .nine.columns.island
+            .eight.columns.offset-by-one
+                h1 Childcare Begins with Trust
+                p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id.
+                a(href='#about' class='button')
 .container 
-    .media
-        img(src='assets/img/provider.jpg' class='five columns')
-        div(class='one-half column offset-by-one')
-            h3 My Philosophy
-            p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu. 
-    //- Foundations Advantage
-    +level2('Why Foundations Dayhome?', '')
-    .media
-        img(src='assets/img/graduation30.svg' class='two columns')
-        .ten.columns
-            h3 Competency
-            p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est.
-    .media
-        img(src='assets/img/kindergarden.svg' class='two columns')
-        .ten.columns
-            h3 Experience
-            p Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi.
-    .media
-        img(src='assets/img/agreement2.svg' class='two columns')
-        .ten.columns
-            h3 Trust
-            p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
+    .row
+        .media
+            img(src='assets/img/provider.jpg' class='five columns')
+            .one-half.column.offset-by-one
+                h3 My Philosophy
+                p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu.
+    .row
+        .media
+            img(src='assets/img/graduation30.svg' class='two columns')
+            .ten.columns
+                h3 Competency
+                p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est.
+    .row
+        .media
+            img(src='assets/img/kindergarden.svg' class='two columns')
+            .ten.columns
+                h3 Experience
+                p Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi.
+    .row
+        .media
+            img(src='assets/img/agreement2.svg' class='two columns')
+            .ten.columns
+                h3 Trust
+                p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
 
-.container.parallax
-    .ten.columns.offset-by-one
-            h3 Government Approved Dayhome
-            p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
-            a(href='#' class='button') Learn
-    //- Growth & Development
-+level2('Growth and Development', 'Stet deserunt eu nam, sed ex decore putant explicari, usu ea modus vocibus signiferumque. Sed ne impetus perfecto. Ea enim complectitur qui. In mea eripuit legendos, splendide honestatis ut pri. Lorem suavitate in has.')
+    .row.wrapper--hero
+        .hero
+        .ten.columns.parallax
+                h3 Government Approved Dayhome
+                p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
+                a(class='button') Learn 
 
-.container
     .activity.wrapper
         img(src='assets/img/art.jpg')
-        .island--primary
+        .row.island--primary
             .media
                 img(src='assets/img/art.png' class='two columns')
                 p(class='ten columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
-    .activity
-    img(src='assets/img/play.jpg')
-    .media.bottom
-        img(src='assets/img/play.png' class='two columns')
-        p(class='') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
-    .activity
-    img(src='assets/img/dress-up.jpg')
-    .media.bottom
-        img(src='assets/img/dress-up.png' class='two columns')
-        p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
-    .activity
-    img(src='assets/img/learning.jpg')
-    .media.bottom
-        img(src='assets/img/learning.png' class='two columns')
-        p(class='nine columns') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+    .activity.wrapper
+        img(src='assets/img/play.jpg')
+        .row.island--primary
+            .media
+                img(src='assets/img/play.png' class='two columns')
+                p(class='ten columns') "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
+    .activity.wrapper
+        img(src='assets/img/dress-up.jpg')
+        .row.island--primary
+            .media
+                img(src='assets/img/dress-up.png' class='two columns')
+                p(class='ten columns') "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
+    .activity.wrapper
+        img(src='assets/img/learning.jpg')
+        .row.island--primary
+            .media    
+                img(src='assets/img/learning.png' class='two columns')
+                p(class='ten columns') "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
 
-.container
-    .tab.three.columns
-        h2 Park
-    .tab.three.columns.offset-by-one
-        h2 Beach
-    .tab.three.columns.offset-by-one
-        h2 Zoo
-    .wrapper.ten.columns.offset-by-one
+    .row
+        h2(class='three columns tab focus') Park
+        h2(class='three columns tab') Beach
+        h2(class='three columns tab') Zoo
+    .row.card--tabbed
         #park.mod.img
             img(src='assets/img/playground.jpg')
             p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
@@ -84,26 +85,21 @@ include mixins.jade
         #zoo.mod.img
             img(src='assets/img/zoo.jpg')
             p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
-.container
-    h2 What's for Lunch?
-    .tab.three.columns
-        h3 Mon
-    .tab.three.columns.offset-by-one
-        h3 Tue
-    .tab.three.columns.offset-by-one
-        h3 Wed
-    #nutrition.wrapper.ten.columns.offset-by-one
-        #mon.mod.text
-            h4 Morning Snack
+    .row
+        h2(class='three columns tab focus') Mon
+        h2(class='three columns tab') Tue
+        h2(class='three columns tab') Wed
+    .row.card--tabbed
+        #mon.mod
+            h3 Morning Snack
             p carrots with baby rabbits
             hr
-            h4 Lunch
+            h3 Lunch
             p asphalt fried mama rabbit
             hr
-            h4 Afternoon Snack
+            h3 Afternoon Snack
             p I don't think you'll be that hungry. . .
-.container        
-    .card.mod.text
+    .row.card.mod.text
         h3 Part-time
         em $10.40/hr
         em $65.00/day
@@ -112,7 +108,7 @@ include mixins.jade
         p Snacks and Lunch Provided
         hr
         p Flexible Hours
-    .card.mod.text
+    .row.card.mod.text
         h3 Before/After School
         em $10.40/hr
         p Drop-in Spots Available
@@ -120,7 +116,7 @@ include mixins.jade
         p CLose to Bus Routes
         hr
         p Lorem Ipsum Something
-    .card.mod.text.focus
+    .row.card.mod.text.focus
         h3 Full-Time
         em $920.00/month
         p Lunch and Snacks Provided
@@ -130,15 +126,13 @@ include mixins.jade
         p Subsidies Available
         a(href='#' class='button') Subsidy Info
 
-
-
-    +level2('Foundations Blog','Ullum tantas dissentiet pro ad, malis corrumpit his ex. Quo homero adipiscing ad, qui in minim error. Insolens quaerendum referrentur nam ut, at cum assum salutatus, ut congue discere constituam mea. Ludus alienum ancillae ea vim,')
-.container
     | {% for posts in site.posts limit: 2 %}
     .post
-        img(src='{{ posts.img }}' class='twelve columns')
-        .media.u-full-width
-            p(class='two columns cal')  {{ posts.date | date: '%d %B' }}
-            h3(class='nine columns offset-by-one') {{ posts.title }}
-        | {{ posts.excerpt }}
+        .row
+            img(src='{{ posts.img }}' class='twelve columns')
+        .row
+            .media.twelve.columns
+                p(class='two columns cal')  {{ posts.date | date: '%d %B' }}
+                h3(class='nine columns offset-by-one') {{ posts.title }}
+            | {{ posts.excerpt }}
     | {% endfor %}

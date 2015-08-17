@@ -29,6 +29,8 @@ body {
 }
 .card--tabbed {
 	@extend .card;
+	transform: translateY(36px); 
+	margin-bottom: 60px;
 	border-radius: 0 5px 5px 5px;
 }	
 .tab {
@@ -97,13 +99,16 @@ html {
 	position: relative;
 	left: calc(-7.5% - 20px);
 }
+.activity > .island {
+	text-align: bottom;
+	bottom: 0;
+}
 .island--primary {
 	@extend .island ;
 	background-color: rgba(10,10,190,0.25);
 	padding: 0 50px;
 	margin: 0 -50px;
 	vertical-align: bottom;
-	bottom: 0;
 }
 
 .activity > img {
