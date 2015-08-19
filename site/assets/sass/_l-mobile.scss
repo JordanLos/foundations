@@ -4,12 +4,13 @@ hr {
 	margin: 0;
 }
 body {
-	color: #fff; 
+	color: #ddd; 
 	background-color: #999;
 }
 /*=====Objects=====*/
 .island {
 	position: absolute;
+	padding: 4%;
 }	
 .wrapper {
 	width: 100%;
@@ -18,6 +19,9 @@ body {
 .media {
 	display: flex;
 	align-items: center;
+	> p {
+		margin-bottom: 0;
+	}
 }
 .card {
 	border-radius: 5px;
@@ -69,9 +73,6 @@ body {
 	margin-left: 0;
 	padding-left: 0;
 }
-body {
-	@include vertical-rhythm(12px);
-}
 
 	
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -82,8 +83,9 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-#landing .island {
-	top: 360px;
+#landing  .island {
+	left: 0;
+	top: 55%;
 	background-color: rgba(10,10,190,0.25);
 }
 .parallax {
@@ -96,14 +98,16 @@ html {
 .activity > img {
 	position: relative;
 	left: calc(-7.5% - 20px);
+	display: block;
 }
 .island--primary {
 	@extend .island ;
+	height: 90px;
 	background-color: rgba(10,10,190,0.25);
-	padding: 0 50px;
-	margin: 0 -50px;
-	vertical-align: bottom;
-	bottom: 0;
+	bottom: 0px;
+	left: calc(-4% - 20px);
+	padding-left: calc(4% + 20px);
+	width: 100vw;
 }
 
 .activity > img {

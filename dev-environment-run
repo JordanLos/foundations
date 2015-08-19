@@ -1,0 +1,2 @@
+#!/bin/bash
+make index-jade-watch layouts-jade-watch compass-watch jekyll-watch browser-sync-all -j
