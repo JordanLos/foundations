@@ -10,7 +10,7 @@ body {
 /*=====Objects=====*/
 .island {
 	position: absolute;
-	padding: 4%;
+	padding: 4% 0;
 }	
 .wrapper {
 	width: 100%;
@@ -20,7 +20,7 @@ body {
 	display: flex;
 	align-items: center;
 	> p {
-		margin-bottom: 0;
+		margin: 0;
 	}
 }
 .card {
@@ -28,7 +28,6 @@ body {
 	background-color: #eee;
 	padding: 24px;
 	margin-bottom: 24px;
-	height: 360px;
 	color: #444;
 }
 .card--tabbed {
@@ -39,31 +38,59 @@ body {
 	text-align: center;
 	border-radius: 5px 5px 0 0;
 	background-color: #888;
-	height: 36px;
+	height: 4rem;
 	color: #444;
+	margin-bottom: 0;
+	padding-top: 0.5rem;
 }
 .tab.focus {
 	background-color: #eee;
 }
 .mod {
-	text-align: center;
-	> h3 {
-		text-align: center;
+	@extend %vertical-align;
+}
+.mod--img {
+	@extend .mod;
+	> img {
+		max-width: 100%;
 	}
+}
+.mod--text {
+	text-align: center;
+}
+.mod--features {
+	height: 36rem;
+	text-align: center;
+	padding-top: 2.4rem;
+	position: relative;
+}
+.price {
+	padding: 5% 0;
+	strong {
+		font-size: 3.6rem;
+	}
+	sup {
+		vertical-align: 2rem;
+		font-size: 1.2rem;
+	}
+}
+.feature {
+	position: absolute;
+	bottom: 2.4rem;
 }
 .wrapper--hero {
 	@extend .wrapper;
 	height: 420px;
 	margin-bottom: 24px;
-}
-.hero {
-	height: 420px;
 	background: url('../img/govt.jpg') no-repeat center center fixed;
 	background-size: auto 100%;
-	width: 100vw;
-	position: absolute;
-	left: calc(-7.5% - 20px);
+	@extend %full-bleed;
 }
+%full-bleed {
+	width: 100vw;
+	transform: translateX( calc(-4% - 20px) );
+}
+
 /*=====Layout=====*/
 #landing {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
@@ -88,37 +115,25 @@ html {
 	top: 55%;
 	background-color: rgba(10,10,190,0.25);
 }
-.parallax {
-	transform: translateY(50%);
-}
 
 .parallax {
 	transform: translateY(25%);
 }
 .activity > img {
 	position: relative;
-	left: calc(-7.5% - 20px);
 	display: block;
+	@extend %full-bleed;
 }
 .island--primary {
 	@extend .island ;
+	@extend %full-bleed;
 	height: 90px;
 	background-color: rgba(10,10,190,0.25);
 	bottom: 0px;
-	left: calc(-4% - 20px);
-	padding-left: calc(4% + 20px);
-	width: 100vw;
-}
-
-.activity > img {
-	width: 100vw;
 }
 .bottom > img {
 	height: 48px;
 	width: auto;
-}
-.mod.img > img {
-	max-width: 100%;
 }
 #park {
 	display: none;

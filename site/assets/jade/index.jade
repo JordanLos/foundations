@@ -35,8 +35,7 @@ include mixins.jade
             p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
 
     .row.wrapper--hero
-        .hero
-        .ten.columns.parallax
+        .ten.columns.offset-by-one.parallax
                 h3 Government Approved Dayhome
                 p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
                 a(class='button') Learn 
@@ -44,7 +43,7 @@ include mixins.jade
     .activity.wrapper
         img(src='assets/img/art.jpg')
         .row.island--primary.media
-                img(src='assets/img/art.png' class='two columns')
+                img(src='assets/img/art.png' class='two columns offset-by-one')
                 p(class='nine columns offset-by-one') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     .activity.wrapper
         img(src='assets/img/play.jpg')
@@ -63,25 +62,25 @@ include mixins.jade
                 p(class='nine columns offset-by-one') "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
 
     .row
-        h2(class='three columns tab focus') Park
-        h2(class='three columns tab') Beach
-        h2(class='three columns tab') Zoo
+        h4(class='three columns tab focus') Park
+        h4(class='three columns offset-by-one tab') Beach
+        h4(class='three columns offset-by-one tab') Zoo
     .row.card--tabbed
-        #park.mod.img
+        #park.mod--img
             img(src='assets/img/playground.jpg')
             p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
-        #beach.mod.img
+        #beach.mod--img
             img(src='assets/img/auburn.jpg')
             p Libris mediocritatem at usu. Ad simul phaedrum nec. Te animal eligendi vim, virtute utroque contentiones mel ex. Eos doctus scripserit ei, hinc dicit ne vel. Scripta assentior eu sea.
-        #zoo.mod.img
+        #zoo.mod--img
             img(src='assets/img/zoo.jpg')
             p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
     .row
-        h2(class='three columns tab focus') Mon
-        h2(class='three columns tab') Tue
-        h2(class='three columns tab') Wed
+        h4(class='three columns tab focus') Mon
+        h4(class='three columns offset-by-one tab') Tue
+        h4(class='three columns offset-by-one tab') Wed
     .row.card--tabbed
-        #mon.mod
+        #mon.mod--text
             h3 Morning Snack
             p carrots with baby rabbits
             hr
@@ -90,32 +89,39 @@ include mixins.jade
             hr
             h3 Afternoon Snack
             p I don't think you'll be that hungry. . .
-    .row.card.mod.text
-        h3 Part-time
-        em $10.40/hr
-        em $65.00/day
-        p Drop-in Spots Available
-        hr
-        p Snacks and Lunch Provided
-        hr
-        p Flexible Hours
-    .row.card.mod.text
-        h3 Before/After School
-        em $10.40/hr
-        p Drop-in Spots Available
-        hr
-        p CLose to Bus Routes
-        hr
-        p Lorem Ipsum Something
-    .row.card.mod.text.focus
-        h3 Full-Time
-        em $920.00/month
-        p Lunch and Snacks Provided
-        hr
-        p Some other Benefit
-        hr
-        p Subsidies Available
-        a(href='#' class='button') Subsidy Info
+    .row
+        h3.twelve.columns.tab Part Time
+    .row.card--tabbed.mod--features
+        .price             
+            p #[strong $10#[sup 40]] /hr
+            p #[strong $65#[sup 00]] /day
+        .feature.ten.columns
+            p Drop-in Spots Available
+            hr
+            p Snacks and Lunch Provided
+            hr
+            p Flexible Hours
+    .row
+        h3(class='u-full-width tab') Before/After School
+    .row.card--tabbed.mod--features
+        p.price #[strong $10#[sup 40]]/hr
+        .feature.ten.columns
+            p Drop-in Spots Available
+            hr
+            p CLose to Bus Routes
+            hr
+            p Lorem Ipsum Something
+    .row
+        h3(class='u-full-width tab highlight') Full-Time
+    .row.card--tabbed.mod--features
+        p.price #[strong $920#[sup 00]]/month
+        .feature.ten.columns
+            p Lunch and Snacks Provided
+            hr
+            p Some other Benefit
+            hr
+            p Subsidies Available
+            a(href='#' class='button') Subsidy Info
 
     | {% for posts in site.posts limit: 2 %}
     .post
