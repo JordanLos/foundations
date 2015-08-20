@@ -3,10 +3,6 @@
 hr {
 	margin: 0;
 }
-body {
-	color: #ddd; 
-	background-color: #999;
-}
 @mixin full-bleed {
 	width: 100vw;
 	transform: translateX( calc(-4% - 20px) );
@@ -93,7 +89,7 @@ body {
 .wrapper--hero {
 	@extend .wrapper;
 	height: 420px;
-	margin-bottom: 24px;
+	margin: 2.4rem 0;
 	background: url('../img/govt.jpg') no-repeat center center fixed;
 	background-size: auto 100%;
 	@include full-bleed;
@@ -122,6 +118,12 @@ html {
 	padding-left: calc(4% + 20px);
 	top: 55%;
 	background-color: rgba(10,10,190,0.25);
+}
+.substance--header {
+	margin: 3.6rem 0;
+	> h4 {	margin-bottom: 0.6rem;
+			text-align: center; }
+	> img { margin: 0 auto 0.6rem auto; }
 }
 
 .parallax {
