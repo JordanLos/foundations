@@ -44,22 +44,22 @@ include mixins.jade
         img(src='assets/img/art.jpg')
         .row.island--primary.media
                 img(src='assets/img/art.png' class='two columns offset-by-one')
-                p(class='nine columns offset-by-one') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+                p(class='eight columns offset-by-one') "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     .activity.wrapper
         img(src='assets/img/play.jpg')
         .row.island--primary.media
-                img(src='assets/img/play.png' class='two columns')
-                p(class='nine columns offset-by-one') "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
+                img(src='assets/img/play.png' class='two columns offset-by-one')
+                p(class='eight columns offset-by-one') "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
     .activity.wrapper
         img(src='assets/img/dress-up.jpg')
         .row.island--primary.media
-                img(src='assets/img/dress-up.png' class='two columns')
-                p(class='nine columns offset-by-one') "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
+                img(src='assets/img/dress-up.png' class='two columns offset-by-one')
+                p(class='eight columns offset-by-one') "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
     .activity.wrapper
         img(src='assets/img/learning.jpg')
         .row.island--primary.media
-                img(src='assets/img/learning.png' class='two columns')
-                p(class='nine columns offset-by-one') "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
+                img(src='assets/img/learning.png' class='two columns offset-by-one')
+                p(class='eight columns offset-by-one') "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
 
     .row
         h4(class='three columns tab focus') Park
@@ -128,8 +128,8 @@ include mixins.jade
         .row
             img(src='{{ posts.img }}' class='twelve columns')
         .row
-            .media.twelve.columns
-                p(class='two columns cal')  {{ posts.date | date: '%d %B' }}
-                h3(class='nine columns offset-by-one') {{ posts.title }}
+            .media.twelve.columns.cal
+                p.two.columns  {{ posts.date | date: '#[strong %d] #[br] %B' }}
+                p.nine.columns.offset-by-one #[strong {{ posts.title }}]
             | {{ posts.excerpt }}
     | {% endfor %}

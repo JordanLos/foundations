@@ -47,10 +47,8 @@ body {
 	background-color: #eee;
 }
 .mod {
-	@extend %vertical-align;
 }
 .mod--img {
-	@extend .mod;
 	> img {
 		max-width: 100%;
 	}
@@ -145,14 +143,16 @@ html {
 
 /*======POST======*/
 .post {
-	> h3 {
-		height: 48px;
-	}
-}
-.cal {
-	text-align: center;
+	text-align: justify;
+	margin-bottom: 2.4rem;
 }
 
+.cal :first-child {
+	text-align: right;
+}
+.cal {
+	padding: 1.2rem 0;
+}
 
 
 
