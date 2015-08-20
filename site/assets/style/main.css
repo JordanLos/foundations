@@ -696,16 +696,17 @@ body {
 }
 
 /* line 19, ../sass/_l-mobile.scss */
-.media {
+.media, .circle {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-/* line 22, ../sass/_l-mobile.scss */
-.media > p {
+/* line 23, ../sass/_l-mobile.scss */
+.media > p, .circle > p {
   margin: 0;
 }
 
-/* line 26, ../sass/_l-mobile.scss */
+/* line 27, ../sass/_l-mobile.scss */
 .card, .card--tabbed {
   border-radius: 5px;
   background-color: #eee;
@@ -714,12 +715,12 @@ body {
   color: #444;
 }
 
-/* line 33, ../sass/_l-mobile.scss */
+/* line 34, ../sass/_l-mobile.scss */
 .card--tabbed {
   border-radius: 0 5px 5px 5px;
 }
 
-/* line 37, ../sass/_l-mobile.scss */
+/* line 38, ../sass/_l-mobile.scss */
 .tab {
   text-align: center;
   border-radius: 5px 5px 0 0;
@@ -730,22 +731,22 @@ body {
   padding-top: 0.5rem;
 }
 
-/* line 46, ../sass/_l-mobile.scss */
+/* line 47, ../sass/_l-mobile.scss */
 .tab.focus {
   background-color: #eee;
 }
 
-/* line 52, ../sass/_l-mobile.scss */
+/* line 53, ../sass/_l-mobile.scss */
 .mod--img > img {
   max-width: 100%;
 }
 
-/* line 56, ../sass/_l-mobile.scss */
+/* line 57, ../sass/_l-mobile.scss */
 .mod--text {
   text-align: center;
 }
 
-/* line 59, ../sass/_l-mobile.scss */
+/* line 60, ../sass/_l-mobile.scss */
 .mod--features {
   height: 36rem;
   text-align: center;
@@ -753,27 +754,27 @@ body {
   position: relative;
 }
 
-/* line 65, ../sass/_l-mobile.scss */
+/* line 66, ../sass/_l-mobile.scss */
 .price {
   padding: 5% 0;
 }
-/* line 67, ../sass/_l-mobile.scss */
+/* line 68, ../sass/_l-mobile.scss */
 .price strong {
   font-size: 3.6rem;
 }
-/* line 70, ../sass/_l-mobile.scss */
+/* line 71, ../sass/_l-mobile.scss */
 .price sup {
   vertical-align: 2rem;
   font-size: 1.2rem;
 }
 
-/* line 75, ../sass/_l-mobile.scss */
+/* line 76, ../sass/_l-mobile.scss */
 .feature {
   position: absolute;
   bottom: 2.4rem;
 }
 
-/* line 79, ../sass/_l-mobile.scss */
+/* line 80, ../sass/_l-mobile.scss */
 .wrapper--hero {
   height: 420px;
   margin-bottom: 24px;
@@ -781,14 +782,14 @@ body {
   background-size: auto 100%;
 }
 
-/* line 87, ../sass/_l-mobile.scss */
-.wrapper--hero, .activity > img, .island--primary {
+/* line 88, ../sass/_l-mobile.scss */
+.wrapper--hero, .activity > img, .island--primary, footer hr {
   width: 100vw;
   transform: translateX(calc(-4% - 20px));
 }
 
 /*=====Layout=====*/
-/* line 93, ../sass/_l-mobile.scss */
+/* line 94, ../sass/_l-mobile.scss */
 #landing {
   background: url("../img/landing-mobile.jpg") no-repeat center center;
   background-size: cover;
@@ -799,115 +800,115 @@ body {
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 105, ../sass/_l-mobile.scss */
+/* line 106, ../sass/_l-mobile.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 108, ../sass/_l-mobile.scss */
+/* line 109, ../sass/_l-mobile.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 111, ../sass/_l-mobile.scss */
+/* line 112, ../sass/_l-mobile.scss */
 #landing .island, #landing .island--primary {
   left: 0;
   top: 55%;
   background-color: rgba(10, 10, 190, 0.25);
 }
 
-/* line 117, ../sass/_l-mobile.scss */
+/* line 118, ../sass/_l-mobile.scss */
 .parallax {
   transform: translateY(25%);
 }
 
-/* line 120, ../sass/_l-mobile.scss */
+/* line 121, ../sass/_l-mobile.scss */
 .activity > img {
   position: relative;
   display: block;
 }
 
-/* line 125, ../sass/_l-mobile.scss */
+/* line 126, ../sass/_l-mobile.scss */
 .island--primary {
   height: 90px;
   background-color: rgba(10, 10, 190, 0.25);
   bottom: 0px;
 }
 
-/* line 132, ../sass/_l-mobile.scss */
+/* line 133, ../sass/_l-mobile.scss */
 .bottom > img {
   height: 48px;
   width: auto;
 }
 
-/* line 136, ../sass/_l-mobile.scss */
+/* line 137, ../sass/_l-mobile.scss */
 #park {
   display: none;
 }
 
-/* line 139, ../sass/_l-mobile.scss */
+/* line 140, ../sass/_l-mobile.scss */
 #beach {
   display: none;
 }
 
 /*======POST======*/
-/* line 145, ../sass/_l-mobile.scss */
+/* line 146, ../sass/_l-mobile.scss */
 .post {
   text-align: justify;
   margin-bottom: 2.4rem;
 }
 
-/* line 150, ../sass/_l-mobile.scss */
+/* line 151, ../sass/_l-mobile.scss */
 .cal :first-child {
   text-align: right;
 }
 
-/* line 153, ../sass/_l-mobile.scss */
+/* line 154, ../sass/_l-mobile.scss */
 .cal {
   padding: 1.2rem 0;
 }
 
-/* line 159, ../sass/_l-mobile.scss */
+/* line 158, ../sass/_l-mobile.scss */
 footer {
   background-color: #333;
 }
 
-/* line 162, ../sass/_l-mobile.scss */
+/* line 161, ../sass/_l-mobile.scss */
 .contact {
+  text-align: center;
   background-color: #780f0f;
-  height: 120px;
-  padding-top: 24px;
-  margin-bottom: 36px;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+  margin-bottom: 6.0rem;
 }
 
 /* line 168, ../sass/_l-mobile.scss */
 .circle {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
   position: absolute;
-  top: -36px;
+  top: -3.6rem;
   left: calc(50% - 36px);
   height: 72px;
   width: 72px;
   border-radius: 50%;
   background-color: #780f0f;
 }
-/* line 175, ../sass/_l-mobile.scss */
-.circle a {
-  margin: 0 auto;
-}
-/* line 178, ../sass/_l-mobile.scss */
+/* line 170, ../sass/_l-mobile.scss */
 .circle img {
   max-height: 48px;
-  max-width: auto;
-  margin: 0 auto;
 }
 
-/* line 188, ../sass/_l-mobile.scss */
+/* line 179, ../sass/_l-mobile.scss */
+footer {
+  padding-bottom: 1.2rem;
+}
+/* line 180, ../sass/_l-mobile.scss */
 footer p {
   font-size: 1.2rem;
-  padding-left: 3.5%;
+  margin-bottom: 0;
+}
+/* line 182, ../sass/_l-mobile.scss */
+footer hr {
+  padding-bottom: 1.2rem;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */

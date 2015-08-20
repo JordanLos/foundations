@@ -19,6 +19,7 @@ body {
 .media {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	> p {
 		margin: 0;
 	}
@@ -154,38 +155,31 @@ html {
 	padding: 1.2rem 0;
 }
 
-
-
 footer {
 	background-color: #333;
 }
 .contact {
+	text-align: center;
 	background-color: rgba(120,15,15,1);
-	height: 120px;
-	padding-top: 24px;
-	margin-bottom: 36px;
+	padding-top: 3.6rem;
+	padding-bottom: 3.6rem;
+	margin-bottom: 6.0rem;
 }
 .circle {
-	display: flex;
-	align-items: center;
-	margin: 0 auto;
+	@extend .media;
+	img{ max-height: 48px;}
 	position: absolute;
-	top: -36px;
+	top: -3.6rem;
 	left: calc(50% - 36px);
-	a {
-		margin: 0 auto;
-	}
-	img {
-		max-height: 48px;
-		max-width: auto;
-		margin: 0 auto;
-	}
 	height: 72px;
 	width: 72px;
 	border-radius: 50%;
 	background-color: rgba(120,15,15,1);
 }	
-footer p {
-	font-size: 1.2rem;
-	padding-left: 3.5%;
+footer {
+	p { font-size: 1.2rem;
+		margin-bottom: 0; }
+	hr { @extend %full-bleed; 
+		 padding-bottom: 1.2rem; }				
+	padding-bottom: 1.2rem;
 }
