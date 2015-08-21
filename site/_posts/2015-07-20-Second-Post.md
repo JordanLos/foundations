@@ -1,5 +1,5 @@
 ---
-title: My second post, whereby I distinguish a numberal not 1 nor 3, yet between them both
+title: Sit omnis homero mollis ad, at iusto evertitur vis, 
 img: /assets/img/post2.jpg
 date: 2015-07-20
 ---

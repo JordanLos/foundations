@@ -1,5 +1,5 @@
 ---
-title: This my third post, indicating it is after the 2nd be butfore the 4th
+title: Ullum tantas dissentiet pro ad.
 img: assets/img/post3.jpg
 date: 2015-07-21
 ---

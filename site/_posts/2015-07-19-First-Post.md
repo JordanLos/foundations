@@ -1,5 +1,5 @@
 ---
-title: Post, the first, a narrative of the events inwhich 0 no longer has pre-eminence
+title: Appetere mandamus imperdiet cu quo.
 img: /assets/img/post1.jpg
 date: 2015-07-19
 ---

@@ -670,51 +670,54 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 /*\______VERTICAL RHYTHM________\*/
-/* line 25, ../sass/_global-variables.scss */
-.mod, .mod--img {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 /*TODO*/
 /* line 3, ../sass/_l-mobile.scss */
 hr {
   margin: 0;
 }
 
-/* line 6, ../sass/_l-mobile.scss */
-body {
-  color: #ddd;
-  background-color: #999;
-}
-
 /*=====Objects=====*/
 /* line 11, ../sass/_l-mobile.scss */
+.banner {
+  width: 100vw;
+  transform: translateX(calc(-4% - 20px));
+  padding: 0.6rem 0;
+  background-color: red;
+}
+/* line 13, ../sass/_l-mobile.scss */
+.banner > p {
+  margin-bottom: 0;
+}
+
+/* line 17, ../sass/_l-mobile.scss */
+.banner--img {
+  padding: 1.2rem 0;
+}
+
+/* line 20, ../sass/_l-mobile.scss */
 .island, .island--primary {
   position: absolute;
   padding: 4% 0;
 }
 
-/* line 15, ../sass/_l-mobile.scss */
+/* line 24, ../sass/_l-mobile.scss */
 .wrapper, .wrapper--hero {
   width: 100%;
   position: relative;
 }
 
-/* line 19, ../sass/_l-mobile.scss */
-.media {
+/* line 28, ../sass/_l-mobile.scss */
+.media, .circle {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-/* line 22, ../sass/_l-mobile.scss */
-.media > p {
+/* line 32, ../sass/_l-mobile.scss */
+.media > p, .circle > p {
   margin: 0;
 }
 
-/* line 26, ../sass/_l-mobile.scss */
+/* line 36, ../sass/_l-mobile.scss */
 .card, .card--tabbed {
   border-radius: 5px;
   background-color: #eee;
@@ -723,12 +726,12 @@ body {
   color: #444;
 }
 
-/* line 33, ../sass/_l-mobile.scss */
+/* line 43, ../sass/_l-mobile.scss */
 .card--tabbed {
   border-radius: 0 5px 5px 5px;
 }
 
-/* line 37, ../sass/_l-mobile.scss */
+/* line 47, ../sass/_l-mobile.scss */
 .tab {
   text-align: center;
   border-radius: 5px 5px 0 0;
@@ -739,22 +742,22 @@ body {
   padding-top: 0.5rem;
 }
 
-/* line 46, ../sass/_l-mobile.scss */
+/* line 56, ../sass/_l-mobile.scss */
 .tab.focus {
   background-color: #eee;
 }
 
-/* line 54, ../sass/_l-mobile.scss */
+/* line 62, ../sass/_l-mobile.scss */
 .mod--img > img {
   max-width: 100%;
 }
 
-/* line 58, ../sass/_l-mobile.scss */
+/* line 66, ../sass/_l-mobile.scss */
 .mod--text {
   text-align: center;
 }
 
-/* line 61, ../sass/_l-mobile.scss */
+/* line 69, ../sass/_l-mobile.scss */
 .mod--features {
   height: 36rem;
   text-align: center;
@@ -762,42 +765,38 @@ body {
   position: relative;
 }
 
-/* line 67, ../sass/_l-mobile.scss */
+/* line 75, ../sass/_l-mobile.scss */
 .price {
   padding: 5% 0;
 }
-/* line 69, ../sass/_l-mobile.scss */
+/* line 77, ../sass/_l-mobile.scss */
 .price strong {
   font-size: 3.6rem;
 }
-/* line 72, ../sass/_l-mobile.scss */
+/* line 80, ../sass/_l-mobile.scss */
 .price sup {
   vertical-align: 2rem;
   font-size: 1.2rem;
 }
 
-/* line 77, ../sass/_l-mobile.scss */
+/* line 85, ../sass/_l-mobile.scss */
 .feature {
   position: absolute;
   bottom: 2.4rem;
 }
 
-/* line 81, ../sass/_l-mobile.scss */
+/* line 89, ../sass/_l-mobile.scss */
 .wrapper--hero {
   height: 420px;
-  margin-bottom: 24px;
+  margin: 2.4rem 0;
   background: url("../img/govt.jpg") no-repeat center center fixed;
   background-size: auto 100%;
-}
-
-/* line 89, ../sass/_l-mobile.scss */
-.wrapper--hero, .activity > img, .island--primary {
   width: 100vw;
   transform: translateX(calc(-4% - 20px));
 }
 
 /*=====Layout=====*/
-/* line 95, ../sass/_l-mobile.scss */
+/* line 98, ../sass/_l-mobile.scss */
 #landing {
   background: url("../img/landing-mobile.jpg") no-repeat center center;
   background-size: cover;
@@ -808,109 +807,136 @@ body {
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 107, ../sass/_l-mobile.scss */
+/* line 110, ../sass/_l-mobile.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 110, ../sass/_l-mobile.scss */
+/* line 113, ../sass/_l-mobile.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 113, ../sass/_l-mobile.scss */
+/* line 116, ../sass/_l-mobile.scss */
 #landing .island, #landing .island--primary {
-  left: 0;
+  left: calc(-4% - 20px);
+  padding-left: calc(4% + 20px);
   top: 55%;
   background-color: rgba(10, 10, 190, 0.25);
 }
 
-/* line 119, ../sass/_l-mobile.scss */
+/* line 122, ../sass/_l-mobile.scss */
+.substance--header {
+  margin: 3.6rem 0;
+}
+/* line 124, ../sass/_l-mobile.scss */
+.substance--header > h4 {
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+/* line 126, ../sass/_l-mobile.scss */
+.substance--header > img {
+  margin: 0 auto 0.6rem auto;
+}
+
+/* line 129, ../sass/_l-mobile.scss */
 .parallax {
   transform: translateY(25%);
 }
 
-/* line 122, ../sass/_l-mobile.scss */
+/* line 132, ../sass/_l-mobile.scss */
 .activity > img {
   position: relative;
   display: block;
+  width: 100vw;
+  transform: translateX(calc(-4% - 20px));
 }
 
-/* line 127, ../sass/_l-mobile.scss */
+/* line 137, ../sass/_l-mobile.scss */
 .island--primary {
+  width: 100vw;
+  transform: translateX(calc(-4% - 20px));
   height: 90px;
   background-color: rgba(10, 10, 190, 0.25);
   bottom: 0px;
 }
 
-/* line 134, ../sass/_l-mobile.scss */
+/* line 144, ../sass/_l-mobile.scss */
 .bottom > img {
   height: 48px;
   width: auto;
 }
 
-/* line 138, ../sass/_l-mobile.scss */
+/* line 148, ../sass/_l-mobile.scss */
 #park {
   display: none;
 }
 
-/* line 141, ../sass/_l-mobile.scss */
+/* line 151, ../sass/_l-mobile.scss */
 #beach {
   display: none;
 }
 
 /*======POST======*/
-/* line 148, ../sass/_l-mobile.scss */
-.post > h3 {
-  height: 48px;
+/* line 157, ../sass/_l-mobile.scss */
+.post {
+  text-align: justify;
+  margin-bottom: 2.4rem;
 }
 
-/* line 152, ../sass/_l-mobile.scss */
+/* line 162, ../sass/_l-mobile.scss */
+.cal :first-child {
+  text-align: right;
+}
+
+/* line 165, ../sass/_l-mobile.scss */
 .cal {
-  text-align: center;
+  padding: 1.2rem 0;
 }
 
-/* line 159, ../sass/_l-mobile.scss */
+/* line 169, ../sass/_l-mobile.scss */
 footer {
   background-color: #333;
 }
 
-/* line 162, ../sass/_l-mobile.scss */
+/* line 172, ../sass/_l-mobile.scss */
 .contact {
+  text-align: center;
   background-color: #780f0f;
-  height: 120px;
-  padding-top: 24px;
-  margin-bottom: 36px;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+  margin-bottom: 6.0rem;
 }
 
-/* line 168, ../sass/_l-mobile.scss */
+/* line 179, ../sass/_l-mobile.scss */
 .circle {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
   position: absolute;
-  top: -36px;
+  top: -3.6rem;
   left: calc(50% - 36px);
   height: 72px;
   width: 72px;
   border-radius: 50%;
   background-color: #780f0f;
 }
-/* line 175, ../sass/_l-mobile.scss */
-.circle a {
-  margin: 0 auto;
-}
-/* line 178, ../sass/_l-mobile.scss */
+/* line 181, ../sass/_l-mobile.scss */
 .circle img {
   max-height: 48px;
-  max-width: auto;
-  margin: 0 auto;
 }
 
-/* line 188, ../sass/_l-mobile.scss */
+/* line 190, ../sass/_l-mobile.scss */
+footer {
+  padding-bottom: 1.2rem;
+}
+/* line 191, ../sass/_l-mobile.scss */
 footer p {
   font-size: 1.2rem;
-  padding-left: 3.5%;
+  margin-bottom: 0;
+}
+/* line 193, ../sass/_l-mobile.scss */
+footer hr {
+  width: 100vw;
+  transform: translateX(calc(-4% - 20px));
+  padding-bottom: 1.2rem;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */

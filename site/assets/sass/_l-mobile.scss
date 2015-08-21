@@ -7,6 +7,10 @@ hr {
 	width: 100vw;
 	transform: translateX( calc(-4% - 20px) );
 }
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
 /*=====Objects=====*/
 .banner {
 	@include full-bleed;
@@ -151,8 +155,12 @@ html {
 #beach {
 	display: none;
 }
-
-
+#tues {
+	display: none;
+}
+#wed {
+	display: none;
+}
 /*======POST======*/
 .post {
 	text-align: justify;
