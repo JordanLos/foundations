@@ -1,32 +1,43 @@
 @import "global-variables";
 /*TODO*/
 hr {
-	margin: 0;
+	margin: 1;
 }
 @mixin full-bleed {
-	width: 100vw;
-	transform: translateX( calc(-4% - 20px) );
 }
+
 body {
-	width: 100vw;
 	overflow-x: hidden;
 }
 /*=====Objects=====*/
+.section {
+	padding: 0;
+}
+.header {
+	background: linear-gradient( to bottom, red, red 3.0rem, white 3.0rem);
+}
 .banner {
-	@include full-bleed;
-	> p { margin-bottom: 0; }
-	padding: 0.6rem 0;
-	background-color: red;
+	> p {	margin-bottom: 0;
+			padding-top: 0.6rem; }
 }
 .banner--img {
 	padding: 1.2rem 0;
 }
-.island {
+.hero {
+	background: url('../img/landing-mobile.jpg') no-repeat center center;
+	background-size: cover;
+	height: calc(100vh - 72px);
+}
+.island--hero {
+	padding: 1rem 3rem;
 	position: absolute;
-	padding: 4% 0;
-}	
+	bottom: 12% ;
+	left: 0;
+	background-color: rgba(15,15,100,0.25);
+}
 .wrapper {
 	width: 100%;
+	height: 100%;
 	position: relative;
 }
 .media {
@@ -99,14 +110,6 @@ body {
 	@include full-bleed;
 }
 /*=====Layout=====*/
-#landing {
-	background: url('../img/landing-mobile.jpg') no-repeat center center;
-	background-size: cover;
-	height: calc(100vh - 72px);
-	width: 100vw;
-	margin-left: 0;
-	padding-left: 0;
-}
 
 	
 /* apply a natural box layout model to all elements, but allowing components to change */
