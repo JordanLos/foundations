@@ -59,15 +59,14 @@ body {
 	}
 }
 .card {
+}
+.card--tabbed {
+	border-radius: 0 5px 5px 5px;
 	border-radius: 5px;
 	background-color: #eee;
 	padding: 24px;
-	margin-bottom: 24px;
+	margin-bottom: 3rem;
 	color: #444;
-}
-.card--tabbed {
-	@extend .card;
-	border-radius: 0 5px 5px 5px;
 }	
 .tab {
 	text-align: center;
@@ -81,8 +80,6 @@ body {
 .tab.focus {
 	background-color: #eee;
 }
-.mod {
-}
 .mod--img {
 	> img {
 		max-width: 100%;
@@ -92,13 +89,11 @@ body {
 	text-align: center;
 }
 .mod--features {
-	height: 36rem;
 	text-align: center;
 	padding-top: 2.4rem;
 	position: relative;
 }
 .price {
-	padding: 5% 0;
 	strong {
 		font-size: 3.6rem;
 	}
@@ -108,8 +103,6 @@ body {
 	}
 }
 .feature {
-	position: absolute;
-	bottom: 2.4rem;
 }
 /*=====Layout=====*/
 
@@ -135,14 +128,15 @@ html {
 	> img { margin: 0 auto 0.6rem auto; }
 }
 
-.activity > img {
+.activity {
 	position: relative;
-	display: block;
-	@include full-bleed;
+	> img { max-width: 100%; 
+			display: block; }
+	color: white;
+	border-radius: 5px;
 }
 .island--primary {
-	@extend .island ;
-	@include full-bleed;
+	position: absolute;
 	height: 90px;
 	background-color: rgba(10,10,190,0.25);
 	bottom: 0px;
@@ -176,7 +170,7 @@ html {
 	padding: 1.2rem 0;
 }
 
-footer {
+.footer {
 	background-color: #333;
 }
 .contact {
@@ -184,7 +178,8 @@ footer {
 	background-color: rgba(120,15,15,1);
 	padding-top: 3.6rem;
 	padding-bottom: 3.6rem;
-	margin-bottom: 6.0rem;
+	margin-bottom: 5rem;
+	position: relative;
 }
 .circle {
 	@extend .media;
@@ -198,9 +193,12 @@ footer {
 	background-color: rgba(120,15,15,1);
 }	
 footer {
-	p { font-size: 1.2rem;
-		margin-bottom: 0; }
-	hr { @include full-bleed; 
-		 padding-bottom: 1.2rem; }				
-	padding-bottom: 1.2rem;
+}
+.copyright {
+	margin-bottom: 0.5rem; 
+	font-size: 1.2rem;
+	color: white;
+}
+hr {
+	margin: 0.25rem;
 }
