@@ -3,11 +3,14 @@
 $dark-text: #011722;//deep color of primary color
 $light-text: #f3fafe;//brightest 'bright pastel'
 $primary-color: #89cef0;
+$primary-light: #D1edfb;
+$primary-dark: #0F9EE4;
 $contrast-color: #ff7450;
+$contrast-light: #FFDCD2;
+$contrast-dark: #FF3904;
 $compliment-color: #ffdf8c; 
-//$compliment-color: #090446;
-//$compliment-color: #5c0029;
-//$compliment-color: #02c39a;
+$primary-grey-dark: #505F66;
+$primary-grey-light: #C3B2AE;
 
 .header {
 	background: linear-gradient( to bottom, $primary-color, $primary-color 3.0rem, white 3.0rem);
@@ -43,21 +46,29 @@ $compliment-color: #ffdf8c;
 }
 
 
-.card--tabbed {}
-.tab {}
-.tab.focus {}
-.footer {}
+.card--tabbed {
+	background-color: $primary-light;
+}
+.card--tabbed.focus {
+	background-color: $contrast-light;
+}
+.tab {
+	background-color: $primary-dark;
+}
+.tab.focus {
+	background-color: $contrast-dark;
+}
+.footer {
+	background-color: $primary-grey-dark;
+}
 .contact {
-	background-color: rgba(120,15,15,1);
+	background-color: $contrast-dark;
 }
 .circle {
-	background-color: rgba(120,15,15,1);
+	background-color: $contrast-dark;
 }
 .copyright {
 	color: $light-text;
-}
-.wrapper--parallax {
-	filter: blur(10px) opacity(0.2);
 }
 
 

@@ -1375,23 +1375,23 @@ th {
   padding: 0;
 }
 
-/* line 12, ../sass/_themes.scss */
+/* line 15, ../sass/_themes.scss */
 .header {
   background: linear-gradient(to bottom, #89cef0, #89cef0 3rem, #ffffff 3rem);
 }
 
-/* line 15, ../sass/_themes.scss */
+/* line 18, ../sass/_themes.scss */
 .button.button-primary {
   background-color: #ff7450;
   border-color: #ff7450;
 }
 
-/* line 19, ../sass/_themes.scss */
+/* line 22, ../sass/_themes.scss */
 .button.button-primary:hover {
   background-color: #ff4b1d;
 }
 
-/* line 23, ../sass/_themes.scss */
+/* line 26, ../sass/_themes.scss */
 .island--hero:before {
   content: "";
   background-color: rgba(137, 206, 240, 0.5);
@@ -1404,57 +1404,77 @@ th {
   position: absolute;
 }
 
-/* line 35, ../sass/_themes.scss */
+/* line 38, ../sass/_themes.scss */
 .island.primary {
   background-color: rgba(137, 206, 240, 0.5);
 }
 
-/* line 38, ../sass/_themes.scss */
+/* line 41, ../sass/_themes.scss */
 .island.contrast {
   background-color: rgba(255, 116, 80, 0.5);
 }
 
-/* line 41, ../sass/_themes.scss */
+/* line 44, ../sass/_themes.scss */
 .island.compliment {
   background-color: rgba(255, 223, 140, 0.5);
 }
 
-/* line 50, ../sass/_themes.scss */
+/* line 49, ../sass/_themes.scss */
+.card--tabbed {
+  background-color: #D1edfb;
+}
+
+/* line 52, ../sass/_themes.scss */
+.card--tabbed.focus {
+  background-color: #FFDCD2;
+}
+
+/* line 55, ../sass/_themes.scss */
+.tab {
+  background-color: #0F9EE4;
+}
+
+/* line 58, ../sass/_themes.scss */
+.tab.focus {
+  background-color: #FF3904;
+}
+
+/* line 61, ../sass/_themes.scss */
+.footer {
+  background-color: #505F66;
+}
+
+/* line 64, ../sass/_themes.scss */
 .contact {
-  background-color: #780f0f;
+  background-color: #FF3904;
 }
 
-/* line 53, ../sass/_themes.scss */
+/* line 67, ../sass/_themes.scss */
 .circle {
-  background-color: #780f0f;
+  background-color: #FF3904;
 }
 
-/* line 56, ../sass/_themes.scss */
+/* line 70, ../sass/_themes.scss */
 .copyright {
   color: #f3fafe;
 }
 
-/* line 59, ../sass/_themes.scss */
-.wrapper--parallax {
-  filter: blur(10px) opacity(0.2);
-}
-
-/* line 65, ../sass/_themes.scss */
+/* line 76, ../sass/_themes.scss */
 .header, .hero, .island--hero h5, a, .button, .parallax, .parallax h3, .activity, .footer, .footer h2 {
   color: #f3fafe;
 }
 
-/* line 68, ../sass/_themes.scss */
+/* line 79, ../sass/_themes.scss */
 .info, .info .example, .pricing, .blog {
   color: #011722;
 }
 
-/* line 71, ../sass/_themes.scss */
+/* line 82, ../sass/_themes.scss */
 a {
   text-decoration: none;
 }
 
-/* line 74, ../sass/_themes.scss */
+/* line 85, ../sass/_themes.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #011722;
 }
