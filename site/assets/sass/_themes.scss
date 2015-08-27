@@ -1,0 +1,76 @@
+@import "compass";
+//color pallete from: http://paletton.com/#uid=33s0u0kesVS00++5BZDlZS-vsRH
+$dark-text: #011722;//deep color of primary color
+$light-text: #f3fafe;//brightest 'bright pastel'
+$primary-color: #89cef0;
+$contrast-color: #ff7450;
+$compliment-color: #ffdf8c; 
+//$compliment-color: #090446;
+//$compliment-color: #5c0029;
+//$compliment-color: #02c39a;
+
+.header {
+	background: linear-gradient( to bottom, $primary-color, $primary-color 3.0rem, white 3.0rem);
+}
+.button.button-primary {
+	background-color: $contrast-color;
+	border-color: $contrast-color;
+}
+.button.button-primary:hover {
+	background-color: darken($contrast-color, 10%); 
+}
+
+.island--hero:before {
+	content: "";
+	background-color: rgba($primary-color, 0.5);
+	display: block;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+	margin-left: -1500px;
+	padding-left: calc(1500px + 91.33333333%);
+	position: absolute;
+}
+
+.island.primary {
+	background-color: rgba($primary-color, 0.5);
+}
+.island.contrast {
+	background-color: rgba($contrast-color, 0.5);
+}
+.island.compliment {
+	background-color: rgba($compliment-color, 0.5);
+}
+
+
+.card--tabbed {}
+.tab {}
+.tab.focus {}
+.footer {}
+.contact {
+	background-color: rgba(120,15,15,1);
+}
+.circle {
+	background-color: rgba(120,15,15,1);
+}
+.copyright {
+	color: $light-text;
+}
+.wrapper--parallax {
+	filter: blur(10px) opacity(0.2);
+}
+
+
+
+.header, .hero, .island--hero h5, a, .button, .parallax, .parallax h3, .activity, .footer, .footer h2 {
+	color: $light-text;
+}
+.info, .info .example, .pricing, .blog  {
+	color: $dark-text;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: $dark-text;
+}
