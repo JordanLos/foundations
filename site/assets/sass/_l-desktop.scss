@@ -1,5 +1,37 @@
-#learn-more {
-	> img {
-		max-height: 0rem;
+.hero {
+	background: url(../img/landing-desktop.jpg) no-repeat center center;
+	background-size: cover;
+}
+hr {
+	margin: 1rem 0;
+}
+.island--hero {
+	width: 62%;
+	padding: 5% 0;
+	hr {
+		margin: 1.5 rem;
+	}
+	h5 {
+		margin-bottom: 0;
 	}
 }
+.media {
+	padding: 3rem 0;
+}
+.parallax .container {
+	transform: translateY(40%);
+}
+.activities {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.activity {
+	flex-basis: 400px;
+	margin-bottom: 3rem;
+}
+/*****TODO*****
+ * 1) keep image height to a max
+ * 2) size background color properly */

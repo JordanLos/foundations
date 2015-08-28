@@ -44,15 +44,18 @@ body, html {
 .hero {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
 	background-size: cover;
-	height: calc(100vh - 72px);
+	height: calc(100vh - 55px);
 }
 
 .island--hero {
 	position: absolute;
 	bottom: 12% ;
 	left: 0%;
-	width: 90%;
 	padding: 7.5% 0;
+}
+@media (max-width: 550px) {
+	.island--hero {
+	width: 90%;
 	h5 {
 		margin-bottom: 0;
 	}
@@ -60,14 +63,17 @@ body, html {
 		width: 90%;
 		margin: 1rem;
 	}
+	}
 }
 #learn-more > img {
 	border-radius: 50%;
 }
-.info {
-	img {
-		max-width: 48px;
-		margin-right: 2rem;
+@media (max-width: 550px) {
+	.info {
+		img {
+			max-width: 48px;
+			margin-right: 2rem;
+		}
 	}
 }
 .parallax {
@@ -99,17 +105,18 @@ body, html {
 	padding: 24px;
 	margin-bottom: 6rem;
 }	
-.tab {
+.tab, .tab--large {
 	text-align: center;
 	border-radius: 5px 5px 0 0;
 	height: 4rem;
 	margin-bottom: 0;
 	padding-top: 0.5rem;
-	width: 25%;
 	margin-right: 5%;
 }
+.tab {
+	width: 25%;
+}
 .tab--large {
-	@extend .tab;
 	width: 100%;
 }
 .mod--img {
@@ -134,12 +141,6 @@ body, html {
 		font-size: 1.2rem;
 	}
 }
-
-#landing  .island {
-	left: calc(-4% - 20px);
-	padding-left: calc(4% + 20px);
-	top: 55%;
-}
 .section--header {
 	margin: 3.6rem 0;
 	> h4 {	margin-bottom: 0.6rem;
@@ -149,7 +150,7 @@ body, html {
 
 .activity {
 	position: relative;
-	> img { max-width: 100%; 
+	img { width: 100%; 
 			display: block; }
 	border-radius: 5px;
 }
