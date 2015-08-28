@@ -1,5 +1,4 @@
 @import "global-variables";
-
 .overflow-x-hidden {
 	width: 100%;
 	overflow-x: hidden;
@@ -23,12 +22,24 @@ body, html {
 .section {
 	padding: 0;
 }
-.banner {
-	> p {	margin-bottom: 0;
-			padding-top: 0.6rem; }
+.header {
+	padding-top: 0.5rem;
+	img {
+		max-width: 48px;
+		padding: 0.5rem 0;
+	}
 }
-.banner--img {
-	padding: 1.2rem 0;
+.banner {
+	p, a {
+		display: inline-block;
+	}
+	p {
+		width: 60%;
+		margin-bottom: 0.5rem;
+	}
+	a {
+		width: 30%;
+	}
 }
 .hero {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
@@ -38,25 +49,26 @@ body, html {
 
 .island--hero {
 	position: absolute;
-	z-index: 1;
 	bottom: 12% ;
 	left: 0%;
-	padding: 1.5rem 0;
+	width: 90%;
+	padding: 7.5% 0;
 	h5 {
-		margin-left: -1rem;
-		margin-bottom: 0rem;
-		text-align: justify;
+		margin-bottom: 0;
 	}
 	hr {
-		margin: 1.0rem 0;
-	}
-	p {
-		margin-top: 1rem;
-		margin-bottom: 2rem;
+		width: 90%;
+		margin: 1rem;
 	}
 }
 #learn-more > img {
 	border-radius: 50%;
+}
+.info {
+	img {
+		max-width: 48px;
+		margin-right: 2rem;
+	}
 }
 .parallax {
 	height: 420px;
@@ -76,26 +88,29 @@ body, html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	> p {
-		margin: 0;
+	p {
+		margin-bottom: 0;
 	}
 }
 .card {
-}
-.card--tabbed {
 	border-radius: 0 5px 5px 5px;
 	border-radius: 5px;
 	background-color: #eee;
 	padding: 24px;
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }	
 .tab {
 	text-align: center;
 	border-radius: 5px 5px 0 0;
-	background-color: #888;
 	height: 4rem;
 	margin-bottom: 0;
 	padding-top: 0.5rem;
+	width: 25%;
+	margin-right: 5%;
+}
+.tab--large {
+	@extend .tab;
+	width: 100%;
 }
 .mod--img {
 	> img {
@@ -140,8 +155,13 @@ body, html {
 }
 .activity .island {
 	position: absolute;
-	height: 90px;
 	bottom: 0px;
+	padding: 2rem 0;
+}
+.activity .media--img {
+	max-width: 48px;
+	height: auto;
+	margin-right: 2rem;
 }
 .bottom > img {
 	height: 48px;
@@ -165,11 +185,20 @@ body, html {
 	margin-bottom: 2.4rem;
 }
 
-.cal :first-child {
-	text-align: right;
-}
 .cal {
-	padding: 1.2rem 0;
+	.date, .excerpt {
+		display: inline-block;
+		padding-top: 1rem;
+	}
+	.date {
+		width: 25%;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+	.excerpt {
+		width: 75%;
+		text-align: justify;
+	}
 }
 
 .contact {
@@ -189,12 +218,10 @@ body, html {
 	width: 72px;
 	border-radius: 50%;
 }	
-footer {
+#footer-hr {
+	margin: 10px 0;
 }
 .copyright {
 	margin-bottom: 0.5rem; 
 	font-size: 1.2rem;
-}
-hr {
-	margin: 0.25rem;
 }

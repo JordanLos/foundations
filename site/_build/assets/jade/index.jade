@@ -5,7 +5,7 @@
 include mixins.jade
 
 .section.hero
-    .island--hero
+    .island--hero.primary
         .container
             .row
                 h5.eleven.columns #[strong CHILDCARE BEGINS WITH TRUST]
@@ -21,7 +21,7 @@ include mixins.jade
             h4 #[strong Why Foundations Dayhome?]
             img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
         .row.media#learn-more
-            img(src='assets/img/provider.jpg' class='five columns')
+            img.five.columns(src='assets/img/provider.jpg')
             .one-half.column.offset-by-one
                 h4 My Philosophy
                 p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu.
@@ -54,24 +54,32 @@ include mixins.jade
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .activity
         img(src='assets/img/art.jpg')
-        .row.island.primary.media
-                img.two.columns(src='assets/img/art.png')
-                p.eight.columns.offset-by-one "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+        .island.primary
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/art.png')
+                    p.eight.columns.offset-by-one "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     .activity
         img(src='assets/img/play.jpg')
-        .row.island.contrast.media
-                img(src='assets/img/play.png' class='two columns')
-                p(class='eight columns offset-by-one') "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
+        .island.contrast
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/play.png')
+                    p.eight.columns.offset-by-one "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
     .activity
         img(src='assets/img/dress-up.jpg')
-        .row.island.compliment.media
-                img(src='assets/img/dress-up.png' class='two columns')
-                p(class='eight columns offset-by-one') "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
+        .island.compliment
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/dress-up.png')
+                    p.eight.columns.offset-by-one "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
     .activity
         img(src='assets/img/learning.jpg')
-        .row.island.primary.media
-                img(src='assets/img/learning.png' class='two columns')
-                p(class='eight columns offset-by-one') "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
+        .island.primary
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/learning.png')
+                    p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
 .section.example    
     .container
         .row.section--header
@@ -81,7 +89,7 @@ include mixins.jade
             h4.three.columns.tab.focus Park
             h4.three.columns.offset-by-one.tab Beach
             h4.three.columns.offset-by-one.tab Zoo
-        .row.card--tabbed
+        .row.card
             #park.mod--img
                 img(src='assets/img/playground.jpg')
                 p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
@@ -96,7 +104,7 @@ include mixins.jade
             h4(class='three columns tab focus') Mon
             h4(class='three columns offset-by-one tab') Tue
             h4(class='three columns offset-by-one tab') Wed
-        .row.card--tabbed
+        .row.card
             #mon.mod--text
                 h3 Morning Snack
                 p Yogurt and Blueberries 
@@ -131,8 +139,8 @@ include mixins.jade
             h4 #[strong Pricing]
             img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
         .row
-            h4.twelve.columns.tab Part Time
-        .row.card--tabbed.mod--features
+            h4.twelve.columns.tab--large Part Time
+        .row.card.mod--features
             .price             
                 p #[strong $10#[sup 40]] /hr
                 p #[strong $65#[sup 00]] /day
@@ -142,8 +150,8 @@ include mixins.jade
                 hr
                 p Flexible Hours
         .row
-            h4(class='u-full-width tab') Before/After School
-        .row.card--tabbed.mod--features
+            h4.twelve.columns.tab--large Before/After School
+        .row.card.mod--features
             p.price #[strong $10#[sup 40]]/hr
                 p Drop-in Spots Available
                 hr
@@ -151,8 +159,8 @@ include mixins.jade
                 hr
                 p Education Activities
         .row
-            h4.u-full-width.tab.focus Full-Time
-        .row.card--tabbed.mod--features.focus
+            h4.u-full-width.tab--large.focus Full-Time
+        .row.card.mod--features.focus
             p.price #[strong $920#[sup 00]]/month
                 p Field Trips
                 hr
@@ -168,10 +176,10 @@ include mixins.jade
         | {% for posts in site.posts limit: 2 %}
         .post
             .row
-                img(src='{{ posts.img }}' class='twelve columns')
+                img.twelve.columns(src='{{ posts.img }}')
             .row
-                .media.twelve.columns.cal
-                    p.two.columns  {{ posts.date | date: '#[strong %d] #[br] %B' }}
-                    p.nine.columns.offset-by-one #[strong {{ posts.title }}]
+                .twelve.columns.cal
+                    p.two.columns.date  {{ posts.date | date: '#[strong %d] #[br] %B' }}
+                    p.nine.columns.offset-by-one.excerpt #[strong {{ posts.title }}]
                 | {{ posts.excerpt }}
         | {% endfor %}

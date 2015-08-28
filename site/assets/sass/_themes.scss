@@ -22,29 +22,38 @@ $primary-grey-light: #C3B2AE;
 .button.button-primary:hover {
 	background-color: darken($contrast-color, 10%); 
 }
-
+/*
 .island--hero:before {
-	content: "";
-	background-color: rgba($primary-color, 0.5);
-	display: block;
-	height: 100%;
 	z-index: -1;
 	top: 0;
 	margin-left: -1500px;
 	padding-left: calc(1500px + 91.33333333%);
 	position: absolute;
+}*/
+@mixin island-background {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
 }
-
-.island.primary {
+.island--hero.primary:before {
+	@include island-background;
 	background-color: rgba($primary-color, 0.5);
 }
-.island.contrast {
+.island.primary:before {
+	@include island-background;
+	background-color: rgba($primary-color, 0.5);
+}
+.island.contrast:before {
+	@include island-background;
 	background-color: rgba($contrast-color, 0.5);
 }
-.island.compliment {
+.island.compliment:before {
+	@include island-background;
 	background-color: rgba($compliment-color, 0.5);
 }
-
 
 .card--tabbed {
 	background-color: $primary-light;
