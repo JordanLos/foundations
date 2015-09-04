@@ -26,6 +26,9 @@ hr {
 .parallax .container {
 	transform: translateY(40%);
 }
+#learn-more-text {
+	margin-top: 5%;
+}
 .parallax {
 	margin-top: 6rem;
 	background: url('../img/govt.jpg') no-repeat center center fixed;
@@ -54,7 +57,11 @@ hr {
 	}
 }
 .card {
-	height: 40rem;
+	padding: 2rem;
+	height: 50rem;
+}
+.mod--img {
+	margin: 3rem 0;
 }
 .pricing .card {
 	padding-top: 5rem;
