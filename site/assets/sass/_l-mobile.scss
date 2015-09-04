@@ -69,15 +69,29 @@ body, html {
 	border-radius: 50%;
 }
 @media (max-width: 550px) {
-	.info {
-		img {
-			max-width: 48px;
-			margin-right: 2rem;
-		}
+	.icon {
+		max-width: 48px;
+		margin-right: 2rem;
+	}
+	#learn-more {
+		width: 85%;
+		margin: 0 auto;
+	}
+	#learn-more > img {
+		width: 45%;
+		margin-right: 2rem;
+		vertical-align: middle;
+		position: relative;
+		top: 0;
+		transform: translateY(50%);
+	}
+	#learn-more-text {
+		width: 45%;
+		text-align: justify;
 	}
 }
 .parallax {
-	height: 420px;
+	margin-top: 6rem;
 	width: 100%;
 	background: url('../img/govt.jpg') no-repeat center center fixed;
 	background-size: auto 100%;
@@ -114,7 +128,7 @@ body, html {
 	border-radius: 5px 5px 0 0;
 	height: 4rem;
 	margin-bottom: 0;
-	padding-top: 0.5rem;
+	padding-top: 0rem;
 }
 @media (max-width: 550px) {
 
@@ -166,7 +180,7 @@ body, html {
 	}
 }
 .section--header {
-	margin: 3.6rem 0;
+	margin: 3.6rem 0 6rem 0;
 	> h4 {	margin-bottom: 0.6rem;
 			text-align: center; }
 	> img { margin: 0 auto 0.6rem auto; }

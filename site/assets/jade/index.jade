@@ -16,27 +16,27 @@ include mixins.jade
             .row
                 a.button.button-primary(href='#learn-more') Learn More
 .section.info
-    .container 
-        .row.section--header
-            h4 #[strong Why Foundations Dayhome?]
-            img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
-        .row.media#learn-more
-            img.five.columns(src='assets/img/provider.jpg')
-            .one-half.column.offset-by-one
+    .section--header
+        h4 #[strong Why Foundations Dayhome?]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
+    .container
+        .row#learn-more
+            img.five.columns#learn-more-image(src='assets/img/provider.jpg')
+            .one-half.column.offset-by-one#learn-more-text
                 h4 My Philosophy
                 p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu.
         .row.media
-            img(src='assets/img/graduation30.svg' class='two columns')
+            img.two.columns.icon(src='assets/img/graduation30.svg')
             .nine.columns.offset-by-one
                 h3 Competency
                 p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est.
         .row.media
-            img(src='assets/img/kindergarden.svg' class='two columns')
+            img.two.columns.icon(src='assets/img/kindergarden.svg')
             .nine.columns.offset-by-one
                 h3 Experience
                 p Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi.
         .row.media
-            img(src='assets/img/agreement2.svg' class='two columns')
+            img.two.columns.icon(src='assets/img/agreement2.svg')
             .nine.columns.offset-by-one
                 h3 Trust
                 p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
@@ -159,7 +159,7 @@ include mixins.jade
         h4.tab--large.is-hidden--desktop Part Time
         .row
             h4.four.columns.tab.is-hidden--mobile Part Time
-            h4.four.columns.tab.is-hidden--mobile Before/After School
+            h4.four.columns.tab.is-hidden--mobile School Age
             h4.four.columns.tab.is-hidden--mobile.focus Full-Time
         .row
             .card.mod--features.four.columns
@@ -171,7 +171,7 @@ include mixins.jade
                     p Snacks and Lunch Provided
                     hr
                     p Flexible Hours
-            h4.tab--large.is-hidden--desktop Before/After School
+            h4.tab--large.is-hidden--desktop School Age
             .card.mod--features.four.columns
                 p.price #[strong $10#[sup 40]]/hr
                     p Drop-in Spots Available
@@ -189,17 +189,15 @@ include mixins.jade
                     p Subsidies Available
                     a.button.button-primary(href='#') Subsidy Info
 .section.blog
+    .section--header
+          h4 #[strong Foundations Blog]
+          img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .container
-        .row.section--header
-            h4 #[strong Foundations Blog]
-            img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
-        | {% for posts in site.posts limit: 2 %}
-        .post
-            .row
-                img.twelve.columns(src='{{ posts.img }}')
-            .row
-                .twelve.columns.cal
-                    p.two.columns.date  {{ posts.date | date: '#[strong %d] #[br] %B' }}
-                    p.nine.columns.offset-by-one.excerpt #[strong {{ posts.title }}]
-                | {{ posts.excerpt }}
+        | {% for posts in site.posts %}
+        .post.four.columns
+              img(src='{{ posts.img }}')
+              .cal
+                  p.date  {{ posts.date | date: '#[strong %d] #[br] %B' }}
+                  p.excerpt #[strong {{ posts.title }}]
+              | {{ posts.excerpt }}
         | {% endfor %}
