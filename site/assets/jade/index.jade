@@ -40,7 +40,6 @@ include mixins.jade
             .nine.columns.offset-by-one
                 h3 Trust
                 p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
-    //TODO: change parallax and add :before for picture and blue
     .parallax
         .container
             .row
@@ -48,10 +47,10 @@ include mixins.jade
                 p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
                 a.button.button-primary Learn 
 
-.section--header
-    h4 #[strong Growth and Development]
-    img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
 .section.activities
+    .section--header
+        h4 #[strong Growth and Development]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .activity
         img(src='assets/img/art.jpg')
         .island.primary
@@ -155,12 +154,8 @@ include mixins.jade
     .section--header
         h4 #[strong Pricing]
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
-    .container
-        h4.tab--large.is-hidden--desktop Part Time
-        .row
-            h4.four.columns.tab.is-hidden--mobile Part Time
-            h4.four.columns.tab.is-hidden--mobile School Age
-            h4.four.columns.tab.is-hidden--mobile.focus Full-Time
+    .container.is-hidden--desktop
+        h4.tab--large Part Time
         .row
             .card.mod--features.four.columns
                 .price             
@@ -171,7 +166,8 @@ include mixins.jade
                     p Snacks and Lunch Provided
                     hr
                     p Flexible Hours
-            h4.tab--large.is-hidden--desktop School Age
+        h4.tab--large School Age
+        .row
             .card.mod--features.four.columns
                 p.price #[strong $10#[sup 40]]/hr
                     p Drop-in Spots Available
@@ -179,7 +175,39 @@ include mixins.jade
                     p Close to Bus Routes
                     hr
                     p Education Activities
-            h4.tab--large.focus.is-hidden--desktop Full-Time
+        h4.tab--large.focus Full-Time
+        .row
+            .card.mod--features.focus.four.columns
+                p.price #[strong $920#[sup 00]]/month
+                    p Field Trips
+                    hr
+                    p Best value!
+                    hr
+                    p Subsidies Available
+                    a.button.button-primary(href='#') Subsidy Info
+    .container.is-hidden--mobile
+        h4.tab--large.is-hidden--desktop Part Time
+        .row
+            h4.four.columns.tab Part Time
+            h4.four.columns.tab School Age
+            h4.four.columns.tab Full-Time
+        .row
+            .card.mod--features.four.columns
+                .price             
+                    p #[strong $10#[sup 40]] /hr
+                    p #[strong $65#[sup 00]] /day
+                    p Drop-in Spots Available
+                    hr
+                    p Snacks and Lunch Provided
+                    hr
+                    p Flexible Hours
+            .card.mod--features.four.columns
+                p.price #[strong $10#[sup 40]]/hr
+                    p Drop-in Spots Available
+                    hr
+                    p Close to Bus Routes
+                    hr
+                    p Education Activities
             .card.mod--features.focus.four.columns
                 p.price #[strong $920#[sup 00]]/month
                     p Field Trips
