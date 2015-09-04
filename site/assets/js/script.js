@@ -1,48 +1,43 @@
 $( document ).ready(function() {
-	/*
-	$('.click-me').click(function() {
-		//Highlights clicked tab
+
+	$('.clickTab').click(function() {
 		$( this ).addClass( "focus" );
-		//Unhighlights other tabs
-		$( '.click-me' ).not( this ).removeClass( 'focus' );
-		//Finds the clicked tab's index number
+		$( '.clickTab' ).not( $( this ) ).removeClass( 'focus' );
+		
 		var self  = $( this ).index();
-		//Matches the tab to its card
-		var	matchedTarget = $( '.click-me-object' ).eq(self);
-		//Displays the card
+		var	matchedTarget = $( '.clickTarget' ).eq(self);
+
 		matchedTarget.css("display", "block" );
-		//Hides all other cards
-		$( '.click-me-object' ).not(matchedTarget).css("display", "none");
+
+		if ($( this ).index() <= 2)
+			$( '#park, #beach, #zoo' ).not(matchedTarget).css("display", "none");
+		else 
+			$( '#mon, #tues, #wed' ).not(matchedTarget).css("display", "none");
+		
+
+	//need to refactor the HTML
+
+
 	});
-	*/
-	function switchCard() {
-		//Highlights clicked tab
+
+	$('.clickTab').hover(function() {
 		$( this ).addClass( "focus" );
-		//Unhighlights other tabs
-		$( '.click-tab-place' ).not( this ).removeClass( 'focus' );
-		//Finds the clicked tab's index number
+		$( '.clickTab' ).not( $( this ) ).removeClass( 'focus' );
+		
 		var self  = $( this ).index();
-		//Matches the tab to its card
-		var	matchedTarget = $( '.click-me-object' ).eq(self);
-		//Displays the card
+		var	matchedTarget = $( '.clickTarget' ).eq(self);
+
 		matchedTarget.css("display", "block" );
-		//Hides all other cards
-		$( '.click-me-object' ).not(matchedTarget).css("display", "none");
-	};
-	
-	$( '.click-tab-place' ).hover(switchCard);
+
+		if ($( this ).index() <= 2)
+			$( '#park, #beach, #zoo' ).not(matchedTarget).css("display", "none");
+		else 
+			$( '#mon, #tues, #wed' ).not(matchedTarget).css("display", "none");
+		
+
+	//need to refactor the HTML
 
 
-
-
-
-
-
-
-
-
-
-
-
+	});
 
 });
