@@ -98,11 +98,15 @@ body, html {
 		margin-bottom: 0;
 	}
 }
+@media (max-width: 550px) {
+	.card {
+		padding: 24px;
+	}
+}
 .card {
 	border-radius: 0 5px 5px 5px;
 	border-radius: 5px;
 	background-color: #eee;
-	padding: 24px;
 	margin-bottom: 6rem;
 }	
 .tab, .tab--large {
@@ -111,13 +115,29 @@ body, html {
 	height: 4rem;
 	margin-bottom: 0;
 	padding-top: 0.5rem;
-	margin-right: 5%;
 }
-.tab {
-	width: 25%;
+@media (max-width: 550px) {
+
+	.tab, .tab--large {
+		margin-right: 5%;
+	}
+	.tab {
+		width: 25%;
+	}
+	.tab--large {
+		width: 100%;
+	}
+	.is-hidden--mobile {
+		display: none;
+	}
+	.pricing {
+		margin: 0 10%
+	}
 }
-.tab--large {
-	width: 100%;
+@media (min-width: 550px) {
+	.is-hidden--desktop {
+		display: none;
+	}
 }
 .mod--img {
 	> img {
@@ -130,7 +150,11 @@ body, html {
 .mod--features {
 	text-align: center;
 	padding-top: 2.4rem;
+}
+@media (max-width: 550px) {
+	.mod--features {
 	position: relative;
+	}
 }
 .price {
 	strong {
@@ -154,7 +178,7 @@ body, html {
 			display: block; }
 	border-radius: 5px;
 }
-.activity .island {
+.island {
 	position: absolute;
 	bottom: 0px;
 	padding: 2rem 0;

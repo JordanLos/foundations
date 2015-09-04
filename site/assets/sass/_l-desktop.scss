@@ -23,15 +23,24 @@ hr {
 }
 .activities {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
 }
 .activity {
 	flex-basis: 400px;
-	margin-bottom: 3rem;
 }
-/*****TODO*****
- * 1) keep image height to a max
- * 2) size background color properly */
+.island {
+	height: 38%;
+	padding: 1rem 0;
+	.media {
+		padding: 1rem 0;
+	}
+}
+.card {
+	height: 40rem;
+}
+.pricing .card {
+	padding-top: 5rem;
+}
