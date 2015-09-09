@@ -1,0 +1,206 @@
+@import "global-variables";
+body, html {
+	overflow-x: hidden ;
+}
+
+/*=====UTILITIES=====*/
+.u-circle {
+	border-radius: 50%;
+}
+
+/*=====HEADER=====*/
+
+.header {
+	padding-top: 0.5rem;
+	img {
+		padding: 0.5rem 0;
+	}
+}
+
+.banner-left, 
+.banner-right {
+	display: inline-block;
+}
+
+.banner-left {
+	width: 60%;
+	margin-bottom: 0.5rem;
+}
+
+.banner-right {
+	width: 30%;
+}
+/*===== LANDING =====*/
+
+.island--hero {
+	position: absolute;
+	bottom: 12% ;
+	left: 0%;
+	padding: 7.5% 0;
+}
+#learn-more > img {
+	border-radius: 50%;
+}
+.wrapper {
+	position: relative;
+}
+.parallax {
+	margin-top: 6rem;
+	background: url('../img/govt.jpg') no-repeat center center fixed;
+	background-size: auto 100%;
+	height: 500px;
+	width: 100%;
+	> .container {
+		top: 20%;
+	}
+}
+.media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.media-img-large {
+	display: inline-block;
+	width: 45%;
+	margin-right: 2rem;
+}
+
+/*=====EXAMPLE=====*/
+.card {
+	border-radius: 0 5px 5px 5px;
+	border-radius: 5px;
+	background-color: #eee;
+	margin-bottom: 6rem;
+	padding: 2rem 3rem;
+}	
+.tab, .tab--large {
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	height: 4rem;
+	margin-bottom: 0;
+	padding-top: 0rem;
+	text-align: center;
+}
+@media (min-width: 550px) {
+	.is-hidden--desktop {
+		display: none;
+	}
+}
+
+
+/*=====PRICING=====*/
+
+.mod--img {
+		max-width: 100%;
+}
+.mod--text {
+	text-align: center;
+}
+.mod--features {
+	text-align: center;
+	padding-top: 2.4rem;
+}
+.price {
+	strong {
+		font-size: 3.6rem;
+	}
+	sup {
+		vertical-align: 2rem;
+		font-size: 1.2rem;
+	}
+}
+.section {
+	max-width: 960px;
+	overflow-x: none;
+	margin: 0 auto;
+}
+.section--header {
+	margin: 0 auto;
+	padding: 4rem 0 6rem 0;
+	> h4 {
+		text-align: center; 
+	}
+	> img { 
+		margin: 0 auto 0.6rem auto; 
+	}
+	max-width: 85%;
+	background-color: white;
+}
+
+/*=====ACTIVITIES=====*/
+
+.activity {
+	position: relative;
+	img { width: 100%; 
+			display: block; }
+	border-radius: 5px;
+}
+.island {
+	position: absolute;
+	bottom: 0px;
+	padding: 2rem 0;
+}
+.bottom > img {
+	height: 48px;
+	width: auto;
+}
+#park,
+#beach,
+#tues,
+#wed {
+	display: none;
+}
+
+
+/*======POST======*/
+
+.post {
+	text-align: justify;
+	margin-bottom: 2.4rem;
+	img {
+		max-width: 100%;
+	}
+}
+
+.cal {
+	.date, .excerpt {
+		display: inline-block;
+		padding-top: 1rem;
+	}
+	.date {
+		width: 25%;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+	.excerpt {
+		width: 75%;
+		text-align: justify;
+	}
+}
+
+
+/*=====FOOTER=====*/
+.contact {
+	text-align: center;
+	padding-top: 3.6rem;
+	padding-bottom: 3.6rem;
+	margin-bottom: 5rem;
+	position: relative;
+}
+.circle {
+	@extend .media;
+	img{ max-height: 48px;}
+	position: absolute;
+	top: -3.6rem;
+	left: calc(50% - 36px);
+	height: 72px;
+	width: 72px;
+	border-radius: 50%;
+}	
+#footer-hr {
+	margin: 10px 0;
+}
+.copyright {
+	margin-bottom: 0.5rem; 
+	font-size: 1.2rem;
+}
