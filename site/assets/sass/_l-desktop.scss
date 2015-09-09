@@ -14,42 +14,28 @@
 	width: 62%;
 }
 .section--header {
-	max-width: 80%;
 	padding-bottom: 10rem;
 }
 
 
 /*=====INFO=====*/
 .media {
-	padding: 3rem 0;
+	padding-bottom: 3rem;
 }
-
 .parallax .container {
 	transform: translateY(40%);
 }
 
-#learn-more-text {
-	margin-top: 5%;
-}
-
-
 /*=====ACTIVITIES=====*/
 .activities {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
+	@include media;
 	flex-wrap: wrap;
-	width: 100%;
 }
 .activity {
 	flex-basis: 400px;
 }
 .island {
-	height: 38%;
-	padding: 1rem 0;
-	.media {
-		padding: 1rem 0;
-	}
+	height: 25%;
 }
 
 
