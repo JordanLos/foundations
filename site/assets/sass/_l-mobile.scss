@@ -4,6 +4,27 @@
 	max-width: 48px;
 	margin-right: 2rem;
 }
+
+
+/*=====UTILITIES=====*/
+.is-hidden--mobile {
+	display: none;
+}
+
+
+/*=====BANNER=====*/
+.banner-left {
+	width: 60%;
+	margin-bottom: 0.5rem;
+}
+.banner-right {
+	width: 30%;
+}
+.banner-left, 
+.banner-right {
+	display: inline-block;
+}
+
 /*===LANDING===*/
 .hero {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
@@ -26,9 +47,4 @@
 }
 .tab--large {
 	width: 100%;
-}
-
-/*****TODO-FIX THIS*********/
-.is-hidden--mobile {
-	display: none;
 }

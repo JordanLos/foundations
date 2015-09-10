@@ -40,7 +40,7 @@ include mixins.jade
             .nine.columns.offset-by-one
                 h3 Trust
                 p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
-    .parallax
+    .parallax.u-full-width
         .container
             .row
                 h3 Government Approved Dayhome
@@ -109,13 +109,13 @@ include mixins.jade
         .row
             .card.six.columns
                 #park.clickTarget
-                    img.mod--img(src='assets/img/playground.jpg')
+                    img.u-max-full-width(src='assets/img/playground.jpg')
                     p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
                 #beach.clickTarget
-                    img.mod--img(src='assets/img/auburn.jpg')
+                    img.u-max-full-width(src='assets/img/auburn.jpg')
                     p Libris mediocritatem at usu. Ad simul phaedrum nec. Te animal eligendi vim, virtute utroque contentiones mel ex. Eos doctus scripserit ei, hinc dicit ne vel. Scripta assentior eu sea.
                 #zoo.clickTarget
-                    img.mod--img(src='assets/img/zoo.jpg')
+                    img.u-max-full-width(src='assets/img/zoo.jpg')
                     p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
 
             h4.two.columns.tab.focus.is-hidden--desktop Mon
@@ -223,7 +223,7 @@ include mixins.jade
     .container
         | {% for posts in site.posts %}
         .post.four.columns
-              img(src='{{ posts.img }}')
+              img.u-max-full-width(src='{{ posts.img }}')
               .cal
                   p.date  {{ posts.date | date: '#[strong %d] #[br] %B' }}
                   p.excerpt #[strong {{ posts.title }}]

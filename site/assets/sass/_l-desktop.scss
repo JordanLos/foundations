@@ -3,6 +3,13 @@
 .icon {
 	max-width: 72px;
 }
+
+/*===UTILITIES===*/
+.is-hidden--desktop {
+		display: none;
+}
+
+
 /*=====LANDING=====*/
 .hero {
 	background: url('../img/landing-desktop.jpg') no-repeat center center;
@@ -19,9 +26,6 @@
 
 
 /*=====INFO=====*/
-.media {
-	padding-bottom: 3rem;
-}
 .parallax .container {
 	transform: translateY(40%);
 }
@@ -50,9 +54,6 @@
 		height: 40rem;
 	}
 }
-/*TODO
-* only 1 card per row between 550-800px
-*/
 
 
 /*=====PRICING=====*/
